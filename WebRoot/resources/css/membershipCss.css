@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+body {
+	background: #f2f2f2;
+}
+.Membership {
+		background: url("../images/Membership.png");
+}
+.double {
+			height:40px;
+			width:249px;
+			margin:0 auto;
+			background: url("../images/grtdb.jpg");
+}
+.doubleImg {
+	height: 200px;
+	width: 290px;
+}
+.MembershipServiceDivRed {
+	color: white;
+	background-color:#FF8C69;
+	text-align: center;
+	font-family: 黑体;
+}
+.MembershipServiceDivWhite{
+	color: white;
+	background-color:#D8BFD8;
+	text-align: center;
+	font-family: 黑体;
+}
+hr{
+	width: 200px;
+	border-color: white;
+}
+a{
+	text-decoration:none;
+	color:#FF7256;
+}
+a:HOVER {
+	color: #FF7256;
+}
+thead{
+	background: #878787;
+}
+td{
+	border:solid #add9c0; 
+	border-width:0px 1px 1px 0px; 
+	padding-left:30px;
+	height: 40px;
+	font-family: 黑体;
+}
+table{
+	width:100%;
+	border:solid #add9c0; 
+	border-width:1px 0px 0px 1px;
+}

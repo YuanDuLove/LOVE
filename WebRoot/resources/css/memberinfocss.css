@@ -1,0 +1,140 @@
+@CHARSET "UTF-8";
+
+a{
+	text-decoration:none;
+	color:#FF7256;
+}
+a:HOVER {
+	color: #FF7256;
+}
+.memBackgroud {
+	width: 100%;
+	height: 300px;
+	background: url("../images/background_member.jpg") center;
+}
+
+.memberInfoDiv { /*个人所有信息div*/
+	background-color: #f7d9a5;
+}
+
+.memPersonInfo { /*个人资料div*/
+	width: 1080px;
+	height: 400px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.memPersonInfoImg {
+	border: 1px solid;
+	border-color: #FFA07A;
+	/*background-color: white;*/
+	width: 250px;
+	height: 250px;
+	margin: 30px 0 0 30px;
+	float: left;
+}
+
+.memberPersonInfoTest { /*个人信息文字部分*/
+	height: 350px;
+	width: 750px;
+	margin-top: 30px;
+	margin-left: 30px;
+	float: left;
+	/*background-color: white;*/
+}
+
+.memInfoTestList { /*个人信息文字列表部分*/
+	height: 30%;
+	width: 100%;
+}
+
+hr {
+	border-color: #FFBBFF;
+}
+
+.nicknameA {
+	font-size: 26px;
+	color: #FF00FF;
+}
+
+input {
+	border: 0px;
+	font: 20px;
+	color: #FF00FF;
+}
+
+td {
+	height: 35px;
+}
+
+.buttonInput {
+	font-size: 16px;
+	color: white;
+	width: 120px;
+	height: 40px;
+	cursor: pointer;
+}
+.memPersonInner{/*内心独白*/
+	width: 1080px;
+	height: 180px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.memPersonData { /*个人及工作状况div*/
+	width: 1080px;
+	height: 350px;
+	background-color: white;
+	margin: 0 auto;
+}
+.memPersonDataImg{
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.memPersonData td{
+	height: 45px;
+	color: #FF83FA;
+}
+
+.memPersonFamily { /*家庭资料div*/
+	width: 1080px;
+	height: 350px;
+	background-color: white;
+	margin: 0 auto;
+}
+.memPersonFamily td{
+	height: 45px;
+	color: #FFA07A;
+}
+
+.memPersonSpouse { /*择偶意向div*/
+	width: 1080px;
+	height: 380px;
+	background-color: white;
+	margin: 0 auto;
+}
+.memPersonSpouse td{
+	height: 45px;
+	color: #FFAEB9;
+}
+
+.memPersonLike { /*个人喜好div*/
+	width: 1080px;
+	height: 350px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.floatDiv{
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+	text-align: center;
+	color: white;
+}
+.giftDivList{
+	width: 80px;
+	height: 80px;
+	margin-top:10px; 
+	float: left;
+}

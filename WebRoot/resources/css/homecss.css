@@ -1,0 +1,166 @@
+@CHARSET "UTF-8";
+body{
+	background-color: #f2f2f2;
+}
+.homeRegDiv{
+	margin: 0 auto;
+	height:600px;
+	width:100%;
+	background: url("../images/homeposter.jpg") center;
+	z-index: 1;
+	/*background-color: red;*/
+}
+.homeRegTextDiv{
+	height:400px; 
+	width: 300px;
+	background-color: rgba(0,0,0,.3);
+	/*当上一行的透明度不起作用的时候执行。这句话的意思本来是用来做渐变的。但是这个地方不需要渐变。所以两个颜色都设置成了相同的颜色。*/
+	/*这个颜色“#19ffffff”是由两部分组成的。第一部是#号后面的19 。是rgba透明度0.1的IEfilter值。从0.1到0.9每个数字对应一个IEfilter值。*/
+	/*第二部分是19后面的六位 。这个是六进制的颜色值。要跟rgb函数中的取值相同*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+	margin-top: 50px;
+	margin-right:100px;
+	float: right;
+	position: relative;
+	z-index: 2;
+	color: #dcdcdc;
+}
+h3{
+	text-align: center;
+}
+.homeRegButton{/*注册按钮*/
+	background-color:#FFBBFF;
+	height:40px;
+	width:120px ;
+	margin:0 auto;
+	border:1px;
+	border-radius:5px;
+	font-size: 16px;
+	color: white;
+	font-family: 黑体;
+}
+h1{
+	text-align: center;
+	
+}
+.homeMemberDiv{/*会员展示框*/
+		height:500px; 
+		width: 1350px;
+		background-color: #eaeaea;
+		text-align: center;
+}
+.homeSuccessfulDiv{/*成功会员展示框*/
+		height:180px; 
+		width: 1350px;
+		background-color: black;
+}
+.homeMemberDivDiv{/*会员信息框中的Div的展示*/
+		height:300px; 
+		width: 900px;
+		margin: 0 auto;
+		
+}
+.homeSuccessfulDivDiv{/*成功会员信息框中的Div的展示*/
+		height:60px; 
+		width: 1350px;
+		background-color: green;
+}
+a{
+	text-decoration:none;
+	color:#FF7256;
+}
+a:HOVER {
+	color: #FF7256;
+}
+.LoginImmediately{/*我是会员立即登录链接*/
+	font-size: 6px;
+	color: white;
+}
+.Memberservice{/*红娘页面*/
+	width: 960px;
+	height: 230px;
+	overflow: hidden;
+	position: relative;
+	 margin: 12px auto;
+}
+
+
+.Memberservice .za_hy_01 {
+   width: 960px;
+    height: 230px;
+    background: url("../images/memberservices.jpg") no-repeat;
+        margin: 0 auto;
+}
+.hnautoBox .gr_no_Box {
+    width: 80px;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    overflow: hidden;
+}
+
+.frame_960 {/*红娘一对一服务页面样式*/
+    width: 1000px;
+    height:2100px;
+    margin: 0 auto;
+}
+.Cherish{/*珍爱通*/
+    width: 700px;
+    height:40px;
+}
+.Step{
+	width: 700px;
+    height:350px;
+    border: 1px solid #cccccc;
+    background: white;
+}
+.Truelove{
+	margin-top:	10px;
+	 width: 700px;
+    height:40px;
+}
+.Privilege{
+	width: 700px;
+	height: 600px;
+	background: white;
+	border: 1px solid #AAAAAA;
+}
+.EnjoyService{
+	float:left;
+    width: 700px;
+    height:1000px;
+}
+.HowToUpgrade{
+	width: 1000px;
+    height:230px;
+    background: url("../images/memberservices.jpg");
+}
+.HongniangServiceDivRed{
+	width: 135px;
+	height: 65px;
+	margin-top: 3px;
+	font-size: 14px;
+	border: 1px solid #cdcdcd;
+	float: left;
+	color: white;
+	background-image: url('../images/hongniang_red.png');
+	cursor: pointer;
+}
+.HongniangServiceDivWhite{
+	width: 135px;
+	height: 65px;
+	margin-top: 3px;
+	font-size: 14px;
+	border: 1px solid #cdcdcd;
+	float: left;
+	color: #ABABAB;
+	cursor: pointer;
+	background-image: url('../images/hongniang_white.png');
+}
+#img:HOVER{
+	 transform:rotate(360deg) scale(1.2);
+    -ms-transform:rotate(360deg) scale(1.2); 	/* IE 9 */
+    -moz-transform:rotate(360deg) scale(1.2); 	/* Firefox */
+    -webkit-transform:rotate(360deg) scale(1.2); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg) scale(1.2); 	/* Opera */
+}

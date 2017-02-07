@@ -1,0 +1,392 @@
+@CHARSET "UTF-8";
+/**设置body*/
+html{
+	overflow:hidden;
+}
+body {
+	background: url("../images/love15.jpg") no-repeat center  ;
+	
+	height: 100% ;
+	background-attachment: fixed;
+	background-size:100%;
+	z-index: -1;
+}
+
+
+/**#div设置的是全局的背景*/
+/**#div{
+	width: 100%;
+	height: 100%;
+	padding-top:0%;
+	padding-bottom:0%;
+	background: url("../images/love6.jpg") center;
+}*/
+/**设置的所有权信息的div*/
+.ownership{
+	/**background-color: rgba(0,100,0,.3);*/
+	position:relative; 
+	margin-top:600px;
+	width: 50%;
+	height: 40px;
+	
+	
+	position: absolute;
+    width: 100%;
+    bottom: 10px;
+    font: 12px/24px "Microsoft YaHei";
+    color: red;
+   padding-left:350px;
+    z-index: 99;
+}
+
+
+/**透明的梯形 div*/
+.transparent_Trapezoid{
+	
+	top:10px;
+	 margin-left:730px;
+	 width:500px;
+	 height:600px;
+	 background:#FFFFFF;
+	 position: absolute;
+	 border:1px solid #dcdcdc;
+	 border-bottom-style:hidden;
+	 border-top-style:hidden;
+	border-radius:3px; 
+	 box-shadow:1px 3px 20px #FFbbff;
+}
+/**logo 预留的div*/
+.logoDiv{
+	width: 20%;
+	height: 110px;
+	background-color: #cdcdcd;
+	margin-left: 180px;
+	margin-top: 40px;
+	
+}
+/**name=loginfrom表单的id样式的css**/
+#loginfrom{
+	border-style: 10px;
+}
+/**name=account的class css格式**/
+.account{
+	
+	padding-left:45px;
+	padding-top: 7px;
+	padding-bottom:7px;
+	font-size: 18px;
+	font-family:微软雅黑;
+	color:red;
+	border-style:solid ; 
+	width:100%;
+	bottom: 0px;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	border: none;
+}
+/**input 背景图片*/
+.account_input{
+	
+	background: url("../images/love12.png") no-repeat left center;
+	position:absolute;
+	z-index: 3;
+}
+/**account 账户的div背景白色**/
+.account_div{
+	width:46%;
+	height:40px;
+	background-color: rgba(0,0,0,.0);
+	margin-left: 130px;
+	margin-top: 25px;
+	position: absolute;
+	border:1px solid black;
+	border-radius:3px; 
+}
+/**password type标签中div格式*/
+.password_div{
+	width:46%;
+	height:40px;
+	background-color: rgba(0,0,0,.0);
+	margin-left: 130px;
+	margin-top: 90px;
+	position: relative;
+	border:1px solid black;
+	border-radius:3px; 
+	
+}
+/**password 标签的格式*/
+.password{
+	padding-left:45px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-size: 18px;
+	font-family:微软雅黑;
+	color: red;
+	border-style:solid; 
+	width:100%;
+	bottom: 0px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	border: none;
+	
+}
+/**password 的背景图片*/
+.password_input{
+	background: url("../images/love15.png") no-repeat left center;
+	position:absolute;
+	z-index: 4;
+	
+}
+/**提示用户的填入的账号信息的div*/
+.warning_div{
+	width:42% ;
+	height: 14px;
+	font-size: 12px;
+	margin-left: 130px;
+	margin-top: 70px;
+	font-family: 微软雅黑;
+	background: url("../images/warning.png") no-repeat left bottom;
+	padding-left: 20px;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	color: black;
+	display:none;
+	position: absolute;
+}
+/**创建的重叠的div和warning_div的div重叠*/
+.overlap_warning_div{
+	width:42% ;
+	height: 14px;
+	font-size: 12px;
+	margin-left: 130px;
+	margin-top:68px;
+	font-family: 微软雅黑;
+	background: url("../images/warning.png") no-repeat left bottom;
+	padding-left: 20px;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	color: black;
+	display:none;
+	position: absolute;
+	
+}
+/**账号或者密码未输入的提示*/
+.overlap_warning_div1{
+	width:42% ;
+	height: 14px;
+	font-size: 12px;
+	margin-left: 130px;
+	margin-top: 6px;
+	font-family: 微软雅黑;
+	background: url("../images/warning.png") no-repeat left bottom;
+	padding-left: 20px;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	color: black;
+	display:none;
+	position: absolute;
+}
+/**提示先填写账号*/
+/*.overlap_warning_div2{
+	width:42% ;
+	height: 14px;
+	font-size: 12px;
+	margin-left: 130px;
+	margin-top:68px;
+	font-family: 微软雅黑;
+	background: url("../images/warning.png") no-repeat left bottom;
+	padding-left: 20px;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	color: black;
+	display:none;
+	position: absolute;
+	
+}*/
+/**password框后面的警告*/
+.password_warning_div{
+	width:42% ;
+	height: 14px;
+	font-size: 12px;
+	margin-left: 130px;
+	margin-top: 6px;
+	font-family: 微软雅黑;
+	background: url("../images/warning.png") no-repeat left bottom;
+	padding-left: 20px;
+	padding-top: 0%;
+	padding-bottom: 0%;
+	color: black;
+	display:none;
+	position: absolute;
+}
+/**忘记密码 a链接的css*/
+.Forget_password_a{
+	color: #ff83fa;
+	font-family:微软雅黑;
+	margin-left: 295px;
+	font-size: 14px;
+	text-decoration: none;
+	position: absolute;
+	margin-top: 1%;
+}
+/**忘记密码 a链接的css的鼠标放上的效果**/
+.Forget_password_a:HOVER {
+	text-decoration:underline;
+	color: red;
+	font-size: 15px;
+}
+/**登录的submit的css*/
+.login_input_submit{
+	margin-left:130px;
+	width: 46%;
+	height:40px;
+	position:absolute;
+	margin-top:38px;
+	font-size: 25px;
+	font-family: 微软雅黑;
+	background-color:#FFbbff ;
+	border-radius: 5px;
+	border: 1px #ffbbff;
+	color: #FFFFFF
+}
+/**立即注册的css div的页面*/
+.noAccount_div{
+	
+	background: url("../images/warning1.png") no-repeat left center;
+	padding-left:15px;
+	width: 295px;
+	height:20px; 
+	margin-top: 84px;
+	margin-left: 130px;
+	font-size: 13px;
+	font-family: 微软雅黑;
+	
+}
+/**点击立即注册的css*/
+.noAccount_div_a{
+	font-size: 15px;
+	padding-left:20px;
+	color: #ff83fa;
+	text-decoration: none;
+}
+/**点击立即注册a的伪类*/
+.noAccount_div_a:HOVER {
+	text-decoration: underline;
+}
+/**合作账号大div里面的第一个p的属性*/
+/**.bagDiv_p1{
+	color: #cdcdcd;
+	font-size: 15px;
+	font-family: 微软雅黑;
+}*/
+/**第三方登录的那句话**/
+.other_p1{
+	margin-left:130px;
+	color: red;
+	font-size: 15px;
+	font-family: 微软雅黑;
+	margin-top: 25px;
+}
+/**第三方登录css*/
+.iconAccout{
+	margin-left: 130px;
+	margin-top: 0px;
+}
+.iconAccout p{
+	overflow: hidden;
+    zoom: 1;
+    margin-bottom: 15px;
+	
+}
+.iconAccout .a1{
+	    background-position: 0 0;
+	
+}
+.iconAccout a{
+	
+    text-indent: -9999px;
+    background-image: url(../images/OtherLogin1.jpg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+   
+    float: left;
+    
+}
+.iconAccout a:HOVER{
+	
+	background-image: url(../images/OtherLogin2.jpg);
+    background-repeat: no-repeat;
+
+	}
+.iconAccout .a2 {
+    background-position: -57px 0;
+}
+.iconAccout .a3 {
+    background-position: -114px 0;
+}
+.iconAccout .a4 {
+    background-position: -169px 0;
+}
+.iconAccout .a5 {
+    background-position: -224px 0;
+}
+.iconAccout span {
+    line-height: 30px;
+    position: relative;
+    left: 3px;
+    cursor: pointer;
+    float: left;
+    margin-top: 5px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+}
+.iconAccout span i {
+    width: 18px;
+    height: 17px;
+    display: inline-block;
+    position: absolute;
+    right: -21px;
+    top: 7px;
+    background-position: -274px -23px;
+    transition: .3s ease-in;
+    
+    
+}
+.iconAccout span i {
+    background-image: url(../images/OtherLogin2.jpg);
+    background-repeat: no-repeat;
+}
+.iconAccout .a6 {
+    background-position: 0 -54px;
+  
+}
+.iconAccout .a7 {
+    background-position: -57px -54px;
+}
+.iconAccout .a8 {
+    background-position: -114px -54px;
+}
+.iconAccout .a9 {
+    background-position: -169px -54px;
+}
+.iconAccout .a10 {
+    background-position: -224px -54px;
+}
+.iconAccout span .slider1 {
+    background-position: -274px 0;
+}
+.tel{
+	margin-left:110px;
+	width: 500px;
+    height: 20px;
+    margin-top:20px;
+    font-family:微软雅黑;
+    color:#ffbbff;
+    font-size:23px;
+    zoom: 1;
+}
+	

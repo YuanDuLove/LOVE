@@ -1,0 +1,285 @@
+@CHARSET "UTF-8";
+
+body{
+	background-image: url("../images/bg.jpg");
+}
+
+/*
+body {
+	background: #f2f2f2;
+}
+*/
+a{
+	text-decoration:none;
+	color:#FF7256;
+}
+a:HOVER {
+	color: #FF7256;
+}
+
+.regMainInfoDiv { /*主要资料div*/
+	width: 300px;
+	margin-left: 80px;
+	float: left;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border:1px solid green;
+	overflow: hidden;
+	background: white;
+}
+
+hr {
+	border-color: #f2f2f2;
+}
+
+.regMainInfoListsDiv { /*资料列表div*/
+	width: 100%;
+	height: 56px;
+	cursor: pointer;
+}
+
+.regMainInfoListsImgDiv {
+	width: 24px;
+	height: 24px;
+	margin-left: 50px;
+	margin-top: 16px;
+	float: left;
+}
+
+.regMainInfoListsTextDiv {
+	width: 80px;
+	height: 56px;
+	line-height:56px;
+	margin-left: 10px;
+	float: left;
+}
+
+#basicinfoSubDiv {/*基本资料中的下拉子选项div*/
+	width: 100%;
+	height: 168px;
+	margin-top: 10px;
+	text-align: center;
+	/*display: none;*/
+}
+.infoSubDivList{/*每个下拉子选项div*/
+	width: 100%;
+	height: 56px;
+	line-height: 56px;font-family:Arial, "宋体",Helvetica, sans-serif;
+	cursor: pointer;
+}
+#lifeSubDiv{
+	width: 100%;
+	height: 112px;
+	margin-top: 10px;
+	text-align: center;
+	/*display: none;*/
+}
+#marrySubDiv{
+	width: 100%;
+	height: 112px;
+	margin-top: 10px;
+	text-align: center;
+	/*display: none;*/
+}
+#setSubDiv{
+	width: 100%;
+	height: 112px;
+	margin-top: 10px;
+	text-align: center;
+	/*display: none;*/
+}
+
+.regDataInfosDiv { /*资料主要信息*/
+	width: 800px;
+	margin-left: 20px;
+	float: left;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border:1px solid green;
+	overflow: hidden;
+}
+.showRegInfoDiv{/*注册信息百分比div*/
+	width: 100%;
+	height: 60px;
+}
+.regInfoDiv{/*注册信息div*/
+	width: 100px;
+	height: 100%;
+	margin-left:30px;
+	line-height: 60px;font-family:Arial, "宋体",Helvetica, sans-serif;
+	float: left;
+}
+.dataIntegrityDiv{/*资料完整度*/
+	width: 450px;
+	height: 100%;
+	margin-left:30px; 
+	line-height: 60px;font-family:Arial, "宋体",Helvetica, sans-serif;
+	float: left;
+}
+.previewMySelfDiv{/*预览我的资料页*/
+	width: 140px;
+	height: 100%; 
+	line-height: 60px;font-family:Arial, "宋体",Helvetica, sans-serif;
+	float: left;
+}
+strong {
+	color: #8C8C8C
+}
+.fixedInfoDiv1{/*固定信息div*/
+	width: 100%;
+	height: 120px;
+	margin-top: 40px;
+}
+.fixedInfoDiv2{/*固定信息div*/
+	width: 80%;
+	height: 80px;
+	border:1px solid green;
+	margin-left: 10%;
+	border-radius:6px;
+}
+h5{
+	margin-left: 10px;
+	color: orange;
+}
+p{
+	margin-left: 10px;
+	color: #6B6B6B;
+}
+.modifyInfoDiv{
+	width: 100%;
+	/*height: 450px;*/
+}
+ul{
+	list-style-type: none;
+	margin-left: 80px;
+}
+li{
+	height:65px;
+}
+.nikenameInput{
+	height: 35px;
+	border: 1px solid green;
+	border-radius:3px;
+	font-size: 16px;
+}
+font{
+	font-size: 13px;
+	color: #cdcdcd;
+}
+.accountInput{
+	height: 35px;
+	border: 1px solid green;
+	border-radius:3px;
+	background: #cdcdcd;
+	font-size: 16px;
+}
+.moneyInput{
+	width: 153px;
+	height: 35px;
+	border: 1px solid green;
+	border-radius:3px;
+	font-size: 16px;
+}
+.buttonDiv{
+	width: 500px;
+	height: 150px;
+	margin-left: 100px;
+}
+.okBtnDiv{
+	width: 150px;
+	height: 50px;
+	background: fuchsia;
+	border: none;
+	color: white;
+}
+.nextBtnDiv{
+	width: 100px;
+	height: 50px;
+	background: gray;
+	color: white;
+	border: 1px solid orange;
+	border-radius:3px;
+}
+
+/*择偶条件css start*/
+.mateSexCss{
+	width:200px;
+	height: 35px;
+	border: 1px solid green;
+	border-radius:3px;
+	font-size: 16px;
+}
+.mateSelectCss{
+	width:80px;
+	height: 35px;
+	border: 1px solid green;
+	border-radius:3px;
+	font-size: 16px;
+}
+.mateAreaCss{
+	width:90px;
+	height: 35px;
+	border: 1px solid green;
+	border-radius:3px;
+	font-size: 16px;
+}
+.mateButtonDiv{
+	width: 500px;
+	height: 50px;
+	margin-left: 150px;
+}
+/*择偶条件css end*/
+
+/*工作生活css start*/
+.textareaBox2 {
+    width: 460px;
+}
+.tip span {
+    display: block;
+    font-size: 12px;
+    color: #999;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.btn1 {
+    top: -30px;
+    width: 48px;
+    border-radius: 2px;
+}
+
+.btn1 {
+    right: 0;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 12px;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+}
+.btn1 {
+    top: -30px;
+    width: 48px;
+    border-radius: 2px;
+}
+
+.textareaBox-in .btn1, .textareaBox-in .btn2 {
+    right: 0;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 12px;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+}
+/*工作生活css end*/
+.Occupation{
+	height: 38px;
+	width:150px;
+	border: 1px solid green;
+	border-radius:3px;
+	font-size: 16px;
+}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+	<!-- 工作状况模块 -->
+	<bean id="showWork" class="com.promise.action.userdata.ShowWorkInfoAction">
+		<property name="service" ref="showWorkService"/>
+	</bean>
+	<bean id="showWorkService" class="com.promise.service.impl.ShowWorkInfoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	<bean id="modifyWork" class="com.promise.action.userdata.ModifyWorkInfoAction">
+		<property name="service" ref="modifyWorkService"/>
+	</bean>
+	<bean id="modifyWorkService" class="com.promise.service.impl.ModifyWorkInfoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+
+	<!-- 修改生活状态模块 -->
+	<bean id="lifeInfo" class="com.promise.action.userdata.ModifyLifeInfoAction">
+		<property name="service" ref="modifyLifeService"/>
+	</bean>
+	<bean id="modifyLifeService" class="com.promise.service.impl.ModifyLifeInfoServiceImpl" scope="prototype">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	<bean id="showLife" class="com.promise.action.userdata.ShowLifeInfoAction">
+		<property name="service" ref="showLifeService"/>
+	</bean>
+	<bean id="showLifeService" class="com.promise.service.impl.ShowLifeInfoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+
+	<!-- 修改家庭资料模块 -->
+	<bean id="familyInfo" class="com.promise.action.userdata.ModifyFamilyInfoAction">
+		<property name="service" ref="modifyFamilyInfoService"/>
+	</bean>
+	<bean id="modifyFamilyInfoService" class="com.promise.service.impl.ModifyFamilyInfoServiceImpl" scope="prototype">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	<bean id = "showFamily" class="com.promise.action.userdata.ShowFamilyInfoAction">
+		<property name="service" ref="showFamilyService"/>
+	</bean>
+	<bean id="showFamilyService" class="com.promise.service.impl.ShowFamilyInfoServiceImpl">
+		<property name="dao" ref = "userinfodao"/>	
+	</bean>
+
+	<!-- 修改婚姻观模块 -->
+	<bean id="marryView" class="com.promise.action.userdata.ModifyMarryViewAction">
+		<property name="service" ref="modifyMarryViewService"/>
+	</bean>
+	<bean id="modifyMarryViewService" class="com.promise.service.impl.ModifyMarryViewServiceImpl" scope="prototype">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	<bean id="showMarry" class="com.promise.action.userdata.ShowMarryInfoAction">
+		<property name="service" ref="showMarryService"/>
+	</bean>
+	<bean id="showMarryService" class="com.promise.service.impl.ShowMarryInfoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+
+	<!-- 修改详细资料模块 -->
+	<bean id="detailInfo" class="com.promise.action.userdata.ModifyDetailInfoAction" init-method="initOptions" scope="prototype">
+		<property name="service" ref="modifyDetailService"/>
+	</bean>
+	<bean id="modifyDetailService" class="com.promise.service.impl.ModifyDetailInfoServiceImpl" scope="prototype">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	 <bean id="detail" class="com.promise.action.userdata.DetailInfoAction" init-method="initOptions" scope="prototype">
+	 	<property name="service" ref="showDetailService"/>
+	 </bean>
+	 <bean id="showDetailService" class="com.promise.service.impl.ShowDetailInfoServiceImpl">
+	 	<property name="dao" ref="userinfodao"/>
+	 </bean>
+	 
+
+	<!-- 修改内心独白模块 -->
+	<bean id="innerInfo" class="com.promise.action.userdata.ModifyInnerInfoAction">
+		<property name="service" ref="modifyInnerService"/>
+	</bean>
+	<bean id="modifyInnerService" class="com.promise.service.impl.ModifyInnerInfoServiceImpl" scope="prototype">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	<bean id="showInner" class="com.promise.action.userdata.ShowInnerInfoAction">
+		<property name="service" ref="showInnerSerice"/>
+	</bean>
+	<bean id = "showInnerSerice" class="com.promise.service.impl.ShowInnerInfoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+
+	<!-- 修改择偶条件模块 -->
+	<bean id="mateInfo" class="com.promise.action.userdata.MateInfoAction" scope="prototype">
+		<property name="service" ref="modifyMateService"/>
+	</bean>
+	<bean id="modifyMateService" class="com.promise.service.impl.ModifyMateInfoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	<bean id="showMate" class="com.promise.action.userdata.ShowMateInfoAction">
+		<property name="service" ref="showMateService"/>
+	</bean>
+	<bean id = "showMateService" class="com.promise.service.impl.ShowMateInfoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	<!-- 修改注册信息模块 -->
+	<bean id="modifyRegInfo" class="com.promise.action.userdata.ModifyRegInfoAction" scope="prototype">
+		<property name="service" ref="modifyRegService"/>
+	</bean>
+	<bean id="modifyRegService" class="com.promise.service.impl.ModifyRefInfoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	<bean id = "showRegInfo" class="com.promise.action.userdata.ShowRegInfoAction">
+		<property name="service" ref="showRegService"/>
+	</bean>
+	<bean id="showRegService" class="com.promise.service.impl.ShowRegInfoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	<!-- 查询用户头像 -->
+	<bean id="queryUserPhoto" class="com.promise.action.userdata.ShowUserPhotoAction">
+		<property name="service" ref="queryUserPhotoService"/>
+	</bean>
+	<bean id="queryUserPhotoService" class="com.promise.service.impl.ShowUserPhotoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+
+</beans>

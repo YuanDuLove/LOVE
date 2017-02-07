@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!--注册信息修改action start -->
+	<package name="login" extends="struts-default">
+		<action name="loginAction" class="loginaction">
+			<result name="login">/loginInterface.jsp</result>
+			<result name="home" type="redirect">/showMainAction.action</result>
+		</action>
+	</package>
+	<!-- 用户信息页面 -->
+	<package name="info" extends="struts-default">
+		<action name="memInfoAction" class="memberInfo">
+			<result name="memInfo">/memberinfo.jsp</result>
+		</action>
+	</package>
+	<!-- 主页面 -->
+	<package name="main" extends="struts-default">
+		<action name="showMainAction" class="showMain">
+			<result name="main">/mainPage.jsp</result>
+		</action>
+		<action name="showQueryAction" class="showQuery">
+			<result name="main">/queryMem.jsp</result>
+		</action>
+	</package>
+	
+	<package name="userphoto" extends="struts-default">
+		<action name="modifyphoto" class="modifyPhotoAction">
+			
+			<!-- 动态设置savePath的属性值 -->
+			<param name="savePath">/images</param>
+			<result name="success" type="redirect">/userdata/queryUserPhotoAction</result>
+			<result name="input">/userphoto.jsp</result>
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1073741824</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+		</action>
+		
+	</package>
+
+	
+		
+</struts>    

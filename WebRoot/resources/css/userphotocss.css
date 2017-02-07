@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+h2{
+	padding-left: 32px;
+	font-size:14px;
+	color:#333;
+	background: url('../images/icon1.png') left center no-repeat;
+}
+a{
+	text-decoration:none;
+	color:#FF7256;
+}
+a:HOVER {
+	color: #FF7256;
+}

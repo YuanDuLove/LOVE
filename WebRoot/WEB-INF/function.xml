@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+	<!-- 搜索页面模块 -->
+	<bean id="showQuery" class="com.promise.action.ShowQueryInfoAction">
+		<property name="service" ref="showQueryService"/>
+	</bean>
+	<bean id="showQueryService" class="com.promise.service.impl.ShowQueryInfoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+
+	<!-- 主页面模块 -->
+	<bean id="showMain" class="com.promise.action.ShowMainPageAction">
+		<property name="service" ref="showMainService"/>
+	</bean>
+	<bean id="showMainService" class="com.promise.service.impl.ShowMainPageServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+
+	<!-- 登录模块 -->
+	<bean id="loginaction" class="com.promise.action.LoginAction">
+		<property name="service" ref="loginService"/>
+	</bean>
+	<bean id="loginService" class="com.promise.service.impl.LoginServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	<!-- 用户信息页面 -->
+	<bean id="memberInfo" class="com.promise.action.ShowMemberInfoAction">
+		<property name="service" ref="memberInfoService"/>
+	</bean>
+	<bean id="memberInfoService" class="com.promise.service.impl.ShowMemInfoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	<!-- 修改用户头像  -->
+	<bean id="modifyPhotoAction" class="com.promise.action.UploadAction">
+		<property name="modifyService" ref="modifyPhotoService"/>
+	</bean>
+	<bean id="modifyPhotoService" class="com.promise.service.impl.ModifyUserPhotoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	
+	
+	
+</beans>

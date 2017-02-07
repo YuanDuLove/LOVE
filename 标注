@@ -1,0 +1,212 @@
+1、创建日志表序列:
+	CREATE SEQUENCE log_seq  INCREMENT BY 1   START WITH 0 NOMAXVALUE NOCYCLE CACHE 10;
+2、建表:
+	create table loginfo(id int not null primary key,log_num varchar2(10) not null,infos varchar2(500) not null,add_date date not null);
+3、添加:
+	INSERT INTO LOGINFO(ID,LOG_NUM,INFOS,ADD_DATE)") VALUES(LOG_SEQ.NEXTVAL,?,?,TO_DATE(?,'yyyy-MM-dd hh24:mi'))");
+4、创建用户信息表:
+	create table userinfo(id int not null primary key,
+						user_num varchar2(21) not null,
+						account varchar2(50) not null,
+						password varchar2(16) not null,
+						nikename varchar2(50) not null,
+						name varchar2(20) not null,
+						sex varchar2(2) not null,
+						height varchar2(3) not null,
+						edu varchar2(2) not null,
+						money varchar2(2) not null,
+						marrystatus varchar2(2) not null,
+						birthday date not null,
+						area varchar2(20) not null,
+						weight varchar2(3),
+						home varchar2(2),
+						userinner varchar2(500),
+						blood varchar2(2),
+						nation varchar2(2),
+						faith varchar2(2),
+						edu_school varchar2(20),
+						mate_sex varchar2(2),
+						mate_bage varchar2(2),
+						mate_eage varchar2(2),
+						mate_area varchar2(10),//工作地区
+						mate_native varchar2(10),//籍贯
+						mate_marrystatus varchar2(2),
+						mate_edu varchar2(2),
+						mate_bmoney varchar2(2),
+						mate_emoney varchar2(2),
+						mate_child varchar2(2),
+						mate_bheight varchar2(3),
+						mate_eheight varchar2(3),
+						havechild varchar2(2),
+						gift_id varchar2(500),
+						memlevel varchar2(3),
+						match varchar2(2),
+						agent_id int,
+						match_id int,
+						smoke varchar2(2),
+						drink varchar2(2),
+						car varchar2(2),
+						cooking varchar2(2),
+						housework varchar2(2),
+						deposit varchar2(2),
+						character varchar(200),
+						jobtype varchar2(10),
+						companytype varchar2(2),
+						busydegree varchar2(2),
+						parentstatus varchar2(2),
+						parentmoney varchar2(2),
+						jobcondition varchar2(500),
+						brother varchar2(2),
+						parentsexpect varchar2(500),
+						hobby varchar2(100),
+						lover varchar2(2),
+						zodiac varchar2(3),
+						marrydate varchar2(2),
+						wantchild varchar2(2),
+						parent varchar2(2),
+						otherparent varchar2(2),
+						remotelove varchar2(2),
+						dating varchar2(100),
+						cardID varchar2(19),
+						userphoto varchar2(200),
+						regdate date not null
+	);
+5、创建用户信息表序列:
+	CREATE SEQUENCE user_seq  INCREMENT BY 1   START WITH 0 minvalue 0 NOMAXVALUE NOCYCLE CACHE 10;
+6、用户表添加事例:
+	insert into userinfo(id,user_num,account,password,nikename,name,sex,height,edu,money,marrystatus,birthday,area,regdate) values(user_seq.nextval,'u_001','13573650275','123456','zangxiaohui','臧晓辉','2','170','3',1000,'1',TO_DATE('2016-1-1','yyyy-MM-dd'),'山东诸城',TO_DATE('2016-11-4','yyyy-MM-dd'));
+7、创建系统无限极编码表:
+	create table SYSCODE
+	(
+	  id    int not null,
+	  name  NVARCHAR2(20) not null,
+	  code  NVARCHAR2(20) not null,
+	  value NVARCHAR2(20) not null,
+	  pcode NVARCHAR2(20) not null
+	);
+8、创建无限极编码表序列:
+	CREATE SEQUENCE sys_seq  INCREMENT BY 1   START WITH 0 minvalue 0 NOMAXVALUE NOCYCLE 
+CACHE 10;
+9、添加民族:
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','0','未填写','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','01','汉族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','02','蒙古族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','03','回族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','04','藏族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','05','维吾尔族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','06','苗族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','07','彝族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','08','壮族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','09','布依族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','10','朝鲜族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','11','满族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','12','侗族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','13','瑶族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','14','白族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','15','土家族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','16','哈尼族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','17','哈萨克族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','18','傣族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','19','黎族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','20','傈僳族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','21','佤族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','22','畲族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','23','高山族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','24','拉祜族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','25','水族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','26','东乡族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','27','纳西族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','28','景颇族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','29','柯尔克孜族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','30','土族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','31','达斡尔族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','32','仫佬族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','33','羌族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','34','布朗族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','35','撒拉族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','36','撒拉族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','37','仡佬族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','38','锡伯族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','39','阿昌族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','40','普米族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','41','塔吉克族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','42','怒族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','43','乌孜别克族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','44','俄罗斯族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','45','鄂温克族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','46','崩龙族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','47','保安族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','48','裕固族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','49','京族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','50','塔塔尔族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','51','独龙族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','52','鄂伦春族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','53','赫哲族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','54','门巴族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','55','珞巴族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','56','基诺族','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','98','外籍人士','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'nation','99','其他','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'edu','0','未填写','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'edu','1','初中','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'edu','2','中专','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'edu','3','大专','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'edu','4','本科','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'edu','5','硕士','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'edu','6','博士','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'marrystatus','0','未填写','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'marrystatus','1','未婚','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'marrystatus','2','离异','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'marrystatus','3','丧偶','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'sex','0','未填写','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'sex','1','男','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'sex','2','女','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'blood','0','未填写','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'blood','1','A型','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'blood','2','B型','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'blood','3','AB型','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'blood','4','O型','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'faith','1','无宗教信仰','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'faith','2','佛教','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'faith','3','基督教','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'faith','4','伊斯兰教','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'faith','5','其他','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'faith','0','未填写','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'money','0','未填写','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'money','1','不限','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'money','2','3000','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'money','3','5000','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'money','4','8000','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'money','5','12000','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'money','6','20000','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'money','7','50000','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'income','1','2000以下','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'income','2','2000-3000','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'income','3','3500-5000','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'income','4','5000-8000','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'income','5','8000以上','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'company','1','未填写','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'company','2','政府机关','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'company','3','事业单位','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'company','4','外资企业','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'company','5','合资企业','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'company','4','国营企业','0');
+	insert into syscode(id,name,code,value,pcode) values(sys_seq.nextval,'company','5','自有企业','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','0','未填写','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','1','奎文区','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','2','潍城区','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','3','寒亭区','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','4','坊子区','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','5','滨海经济开发区','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','6','高新技术开发区','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','7','经济开发区','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','8','峡山生态区','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','9','临朐县','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','10','昌乐县','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','11','青州市','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','12','诸城市','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','13','寿光市','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','14','安丘市','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','15','高密市','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','16','昌邑市','0');
+	INSERT INTO SYSCODE(NAME,CODE,VALUE,PCODE) VALUES('area','17','其他','0');
