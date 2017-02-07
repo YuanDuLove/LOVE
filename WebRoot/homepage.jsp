@@ -444,29 +444,29 @@
 				</div>
 				<div class="homeMemberDivDiv">
 					<div style="width: 225px;height: 300px;float: left;">
-						<img id="img" width="225px" height="300px" alt="" src="resources/images/zxh.jpg">
+						<img id="img" width="225px" height="300px" alt="" src="resources/images/service10-1.jpg">
 					</div>
 					<div style="width: 225px;height: 300px;float: left;">
 						<div style="width: 225px;height: 150px;">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service1.jpg">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service2.jpg">
+							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service1-1.jpg">
+							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service2-1.jpg">
 						</div>
 						<div style="width: 225px;height: 150px;">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service3.jpg">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service1.jpg">
+							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service3-1.jpg">
+							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service4-1.jpg">
 						</div>
 					</div>
 					<div style="width: 225px;height: 300px;float: left;">
-						<img id="img" width="225px" height="300px" alt="" src="resources/images/zxh2.jpg">
+						<img id="img" width="225px" height="300px" alt="" src="resources/images/service9-1.jpg">
 					</div>
 					<div style="width: 225px;height: 300px;float: left;">
 						<div style="width: 225px;height: 150px;">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service1.jpg">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service2.jpg">
+							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service5-1.jpg">
+							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service6-1.jpg">
 						</div>
 						<div style="width: 225px;height: 150px;">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service3.jpg">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service1.jpg">
+							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service7-1.jpg">
+							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service11-1.jpg">
 						</div>
 					</div>
 				</div>
