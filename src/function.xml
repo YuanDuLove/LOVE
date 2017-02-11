@@ -13,6 +13,23 @@
 		<action name="memInfoAction" class="memberInfo">
 			<result name="memInfo">/memberinfo.jsp</result>
 		</action>
+		
+		<!-- 添加约会消息 -->
+		<action name="addDateMsgAction" class="addDateMsg">
+			<result name="ok"></result>
+		</action>
+		<!-- 添加打招呼消息 -->
+		<action name="addGreetMsgAction" class="addGreetMsg">
+			<result name="ok"></result>
+		</action>
+		<!-- 添加发邮件消息 -->
+		<action name="addEmailMsgAction" class="addEmailMsg">
+			<result name="ok"></result>
+		</action>
+		<!-- 添加委托红娘消息 -->
+		<action name="addMatchMsgAction" class="addMatchMsg">
+			<result name="ok"></result>
+		</action>
 	</package>
 	<!-- 主页面 -->
 	<package name="main" extends="struts-default">

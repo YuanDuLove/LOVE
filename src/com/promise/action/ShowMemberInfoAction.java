@@ -218,7 +218,6 @@ public class ShowMemberInfoAction {
 		userphoto = (String)msg.get("USERPHOTO");
 		constellation = Tools.getConstellation(Integer.valueOf(DateTools.getMonth(DateTools.stringToDate(birthday))), Integer.valueOf(DateTools.getDay(DateTools.stringToDate(birthday))));
 		zodiac = Tools.getZodiac(Integer.valueOf(DateTools.getYear(DateTools.stringToDate(birthday))));
-		
 		return "memInfo";
 	}
 
@@ -237,6 +236,7 @@ public class ShowMemberInfoAction {
 	public void setId(String id) {
 		this.id = id;
 	}
+	
 
 	private String userphoto = null;
 	private Map msg = null;

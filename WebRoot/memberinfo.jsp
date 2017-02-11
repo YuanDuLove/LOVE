@@ -38,10 +38,76 @@
 	function showMsgInfo(){
 		window.location.href="error.jsp";
 	}
+	
+	function email(hid){
+		window.location.href = "showRegInfoAction.action";
+	}
+	function date(hid){	
+		var xmlHttp = false;
+		if(window.XMLHttpRequest){
+			xmlHttp = new XMLHttpRequest();
+		} else if(window.ActiveXObject){
+			try{
+				xmlHttp = new ActiveXobject("Msxml2.XMLHTTP");
+			}catch(e){
+				try{
+					xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+				}catch(e){
+					window.alert("该浏览器不支持AJAX");
+				}
+			}
+		}
+		xmlHttp.open("POST","addDateMsgAction.action?id="+hid,true);
+		xmlHttp.onreadystatechange = function(){
+			if(xmlHttp.readyState == 4){
+				//成功
+				alert("约会消息已发送成功");
+			}
+		}
+		xmlHttp.send();
+	}
+	function greet(hid){
+	
+		var xmlHttp = false;
+		if(window.XMLHttpRequest){
+			xmlHttp = new XMLHttpRequest();
+		} else if(window.ActiveXObject){
+			try{
+				xmlHttp = new ActiveXobject("Msxml2.XMLHTTP");
+			}catch(e){
+				try{
+					xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+				}catch(e){
+					window.alert("该浏览器不支持AJAX");
+				}
+			}
+		}
+		xmlHttp.open("POST","addGreetMsgAction.action?id="+hid,true);
+		xmlHttp.onreadystatechange = function(){
+			if(xmlHttp.readyState == 4){
+				//成功
+				//alert("约会消息已发送成功");
+				var greet = document.getElementById("greet");
+				greet.disabled=true;
+				greet.style.background = "#cdcdcd";
+				greet.value = "已打招呼";
+				greet.style.cursor = "not-allowed";
+			}
+		}
+		xmlHttp.send();
+	
+	}
+	function match(){
+		window.location.href = "showRegInfoAction.action";
+	}
+	
 </script>
 </head>
 
 <body>
+	<%
+		String hid = request.getParameter("id");
+	 %>
 	<div style="width: 1350px;margin: 0 auto;">
 		<a name="top" id="top"></a>
 		<div style="width: 1350px;height: 80px">
@@ -157,14 +223,14 @@
 					</div>
 					<hr>
 					<div class="memInfoTestList">
-						<input type="button" name="email" value="发邮件" class="buttonInput"
-							style="background-color: pink;"> <input type="button"
-							name="email" value="约会" class="buttonInput"
-							style="background-color: #DA70D6;"> <input type="button"
-							name="email" value="打招呼" class="buttonInput"
-							style="background-color: #EE82EE;"> <input type="button"
-							name="email" value="委托红娘" class="buttonInput"
-							style="background-color: #EE7AE9;">
+						<input type="button" id="email" name="email" value="发邮件" class="buttonInput"
+							style="background-color: pink;" onclick="email(<%=hid%>)"> 
+						<input type="button" id="dating" name="email" value="约会" class="buttonInput"
+							style="background-color: #DA70D6;" onclick="date(<%=hid%>)"> 
+						<input type="button" id="greet" name="email" value="打招呼" class="buttonInput"
+							style="background-color: #EE82EE;" onclick="greet(<%=hid%>)"> 
+						<input type="button" id="match" name="email" value="委托红娘" class="buttonInput"
+							style="background-color: #EE7AE9;" onclick="match(<%=hid%>)">
 					</div>
 				</div>
 			</div>
@@ -467,5 +533,6 @@
 		</div>
 		<!-- 星级特权div start -->
 	</div>
+	
 </body>
 </html>

@@ -35,6 +35,27 @@
 		<property name="dao" ref="userinfodao"/>
 	</bean>
 	
+	<!-- 发送约会消息功能 -->
+	<bean id="addDateMsg" class="com.promise.action.AddDateMsgAction">
+		<property name="service" ref="addMsgService"/>
+	</bean>
+	<!-- 发送打招呼消息功能 -->
+	<bean id="addGreetMsg" class="com.promise.action.AddGreetMsgAction">
+		<property name="service" ref="addMsgService"/>
+	</bean>
+	<!-- 发送发邮件消息功能 -->
+	<bean id="addEmailMsg" class="com.promise.action.AddDateMsgAction">
+		<property name="service" ref="addMsgService"/>
+	</bean>
+	<!-- 发送委托红娘消息功能 -->
+	<bean id="addMatchMsg" class="com.promise.action.AddDateMsgAction">
+		<property name="service" ref="addMsgService"/>
+	</bean>
+	
+	<bean id="addMsgService" class="com.promise.service.impl.AddMsgServiceImpl">
+		<property name="dao" ref="msginfodao"/>
+	</bean>
+	
 	<!-- 修改用户头像  -->
 	<bean id="modifyPhotoAction" class="com.promise.action.UploadAction">
 		<property name="modifyService" ref="modifyPhotoService"/>
