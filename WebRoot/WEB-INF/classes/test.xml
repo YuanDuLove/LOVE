@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 系统常量定义，定义上传文件临时存放路径 -->
+	<constant name="struts.multipart.saveDir" value="e:\"></constant>
+	<!-- Action所在包定义 -->
+	<package name="C04" extends="struts-default">
+		<!-- Action名字，类以及导航页面定义 -->
+		<!-- 通过Action类处理才导航的的Action定义 -->
+		<action name="upload1" class="com.promise.action.UploadAction1">
+			<result name="main">/result.jsp</result>
+		</action>
+	</package>
+
+
+	<package name="com.suma.ssh.manageAction" extends="struts-default"
+		namespace="/manage">
+		<action name="upload" class="com.promise.action.UploadAction"
+			method="execute">
+			<!-- 动态设置savePath的属性值 -->
+			<param name="savePath">/images</param>
+			<result name="success">/testImage.jsp</result>
+			<result name="input">/testImage.jsp</result>
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+		</action>
+	</package>
+
+
+</struts>    

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="userdata" extends="struts-default">
+	
+		<!--注册信息修改action start  -->
+		<action name="showRegInfoAction" class="showRegInfo">
+			<result name = "regInfo">/userdata/showRegInfo.jsp</result>
+		</action>
+		
+		<action name="modifyRegInfoAction" class="modifyRegInfo">
+			<result name="regInfo">/userdata/showRegInfo.jsp</result>
+		</action>
+		<!--注册信息修改action end  -->
+	
+		<!-- 择偶信息修改action start -->
+		<action name="mateInfoAction" class="mateInfo">
+			<result name="mateInfo">/userdata/showMateInfo.jsp</result>
+		</action>
+		
+		<action name="showMateAction" class="showMate">
+			<result name="mateInfo">/userdata/showMateInfo.jsp</result>
+		</action>
+		
+		<!-- 择偶信息action end -->
+		
+		<!-- 内心独白action -->
+		<action name="innerInfoAction" class="innerInfo">
+			<result name="innerInfo">/userdata/showInnerInfo.jsp</result>
+		</action>
+		<action name = "showInnerAction" class="showInner">
+			<result name="innerInfo">/userdata/showInnerInfo.jsp</result>
+		</action>
+		
+		<!-- 详细资料action -->
+		<action name="detailInfoAction" class="detailInfo">
+			<result name="detailInfo">/userdata/showDetailInfo.jsp</result>
+		</action>
+		<action name="detailInfo" class="detail">
+			<result name="detailInfo">/userdata/showDetailInfo.jsp</result>
+		</action>
+		
+		<!-- 婚姻观action -->
+		<action name="marryViewAction" class="marryView">
+			<result name="marryView">/userdata/showMarryView.jsp</result>
+		</action>
+		<action name="showMarryAction" class="showMarry">
+			<result name= "marryInfo">/userdata/showMarryView.jsp</result>
+		</action>
+		
+		<!-- 家庭情况action -->
+		<action name="familyInfoAction" class="familyInfo">
+			<result name="familyInfo">/userdata/showFamilyInfo.jsp</result>
+		</action>
+		
+		<action name="showFamilyAction" class = "showFamily">
+			<result name="familyInfo">/userdata/showFamilyInfo.jsp</result>
+		</action>
+		
+		<!-- 生活状态action -->
+		<action name="lifeInfoAction" class="lifeInfo">
+			<result name="lifeInfo">/userdata/showLifeInfo.jsp</result>
+		</action>
+		<action name="showLifeAction" class="showLife">
+			<result name="lifeInfo">/userdata/showLifeInfo.jsp</result>
+		</action>
+		
+		<!-- 工作状况 -->
+		<action name="showWorkAction" class="showWork">
+			<result name="workInfo">/userdata/showWorkInfo.jsp</result>
+		</action>
+		<action name="modifyWorkAction" class="modifyWork">
+			<result name="workInfo">/userdata/showWorkInfo.jsp</result>
+		</action>
+		
+		<action name="queryUserPhotoAction" class="queryUserPhoto">
+			<result name="main">/userdata/showphoto.jsp</result>
+		</action>
+		
+	</package>
+</struts>    

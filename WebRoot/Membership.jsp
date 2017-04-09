@@ -20,7 +20,7 @@ a{
 	text-decoration:none;
 }
 body{
-	background-image: url("resources/images/bg.jpg");
+	background:white;
 }
 </style>
 <!--真心会员价格点击事件  -->
@@ -53,7 +53,10 @@ body{
 		window.location.href = "userdata/showRegInfoAction.action";
 	}
 	function showMsgInfo(){
-		window.location.href="error.jsp";
+		window.location.href="showMsgAction.action";
+	}
+	function pay(){
+		window.location.href="pay.jsp";
 	}
 </script>
 </head>
@@ -62,108 +65,105 @@ body{
 		<div style="width: 1350px;height: 80px">
 			<a href="homepage.jsp">
 				<div
-					style="margin-left:100px;background-image:url('resources/images/logo.png') ;width:91px;height: 80px;float: left;">
-				</div> 
-			</a>
-			<div style="font-size: 24px;line-height: 80px;width: 800px;height: 80px;float: left;">1亿 "会员" |
-				"实名婚恋网开创者"只有爱无需等待</div>
+					style="margin-left:100px;background-image:url('resources/images/logo.png') ;width:442px;height: 85px;float: left;">
+				</div> </a>
 			<!-- 
 			<div style="width: 195px;height: 80px;float: left;">
 				<img alt="" src="resources/images/top-bg.jpg">
 			</div>
 			 -->
 		</div>
-		<div style="width: 1350px;height: 60px;background-color: #703987;position:relative;">
-			<ul style="list-style: none;line-height: 60px;">
+		<div
+			style="width: 1350px;height: 40px;background-color: #D41E5B;position:relative;">
+			<ul style="list-style: none;line-height: 40px;">
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="homepage2.jsp"
-					style="color: white;text-decoration:none">主页</a></li>
+					style="color: white;text-decoration:none;"><img
+					alt="" src="resources/images/homeoff.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="showMainAction.action"
-					style="color: white;text-decoration:none">缘都空间</a></li>
+					style="color: white;text-decoration:none"><img
+					alt="" src="resources/images/zone.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="showQueryAction.action" style="color: white;">搜索</a></li>
+					href="showQueryAction.action" style="color: white;"><img
+					alt="" src="resources/images/search.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="Matchmaker.jsp" style="color: white;">红娘服务</a></li>
+					href="Matchmaker.jsp" style="color: white;"><img
+					alt="" src="resources/images/match.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="Membership.jsp" style="color: white;">会员</a></li>
+					href="Membership.jsp" style="color: white;"><img
+					alt="" src="resources/images/vipoff.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="MyJsp.jsp" style="color: white;">关于我们</a></li>
+					href="MyJsp.jsp" style="color: white;"><img
+					alt="" src="resources/images/about.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="callme.jsp" style="color: white;">联系我们</a></li>
+					href="callme.jsp" style="color: white;"><img
+					alt="" src="resources/images/call.png" style="line-height: 40px;height: 40px"></a></li>
 	
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/order.png" style="line-height: 60px"
+					alt="" src="resources/images/order.png" style="line-height: 40px;height: 40px"
 					onclick="showMsgInfo()"></li>
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/msgicon.png" style="line-height: 60px"
+					alt="" src="resources/images/msgicon.png" style="line-height: 40px;height: 40px"
 					onclick="showMsgInfo()"></li>
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/mem.png" style="line-height: 60px"
+					alt="" src="resources/images/mem.png" style="line-height: 40px;height: 40px"
 					onclick="showMemInfo()"></li>
 			</ul>
 		</div>
 	
-		<div class="Memberservice">
-			<div class="za_hy_01" style="cursor: pointer;"
-				onclick="sumitPaymentOrder(1,290);return false;"></div>
-			<div class="gr_no_Box"></div>
+		<div style="width: 1350px;height: 800px;margin: 0 auto;background: url('resources/images/bgimg10.jpg');">
 		</div>
+		<div style="width: 80%;height: 60px;margin: 0 auto;margin-top:25px;background: url('resources/images/bgimg11.png') no-repeat;">
+		</div>
+		<div style="width: 1350px;height: 370px;margin: 0 auto;background: url('resources/images/bgimg12.png') no-repeat;">
+			<div style="width: 114px;height: 170px;float: left;margin-left:70px;margin-top: 180px;cursor: pointer;" onclick="pay()">
+				<div style="width: 68px;height: 40px;margin:0 auto;;background: url('resources/images/bgimg13.png') no-repeat;"></div>
+				<div style="width: 114px;height: 130px;margin:0 auto;;background: url('resources/images/bgimg14.png') no-repeat;"></div>
+			</div>
+			<div style="width: 114px;height: 210px;float: left;margin-left:70px;margin-top: 140px;cursor: pointer;" onclick="pay()">
+				<div style="width: 88px;height: 60px;margin:0 auto;background: url('resources/images/bgimg15.png') no-repeat;"></div>
+				<div style="width: 114px;height: 150px;margin:0 auto;;background: url('resources/images/bgimg16.png') no-repeat;"></div>
+			</div>
+			<div style="width: 143px;height: 170px;float: left;margin-left:70px;margin-top: 120px;cursor: pointer;" onclick="pay()">
+				<div style="width: 143px;height: 65px;margin:0 auto;background: url('resources/images/bgimg17.png') no-repeat;"></div>
+				<div style="width: 114px;height: 165px;margin:0 auto;;background: url('resources/images/bgimg18.png') no-repeat;"></div>
+			</div>
+			<div style="width: 156px;height: 270px;float: left;margin-left:70px;margin-top: 80px;cursor: pointer;" onclick="pay()">
+				<div style="width: 156px;height: 77px;margin:0 auto;background: url('resources/images/bgimg19.png') no-repeat;"></div>
+				<div style="width: 114px;height: 190px;margin:0 auto;;background: url('resources/images/bgimg20.png') no-repeat;"></div>
+			</div>
+			<div style="width: 156px;height: 280px;float: left;margin-left:70px;margin-top: 70px;cursor: pointer;" onclick="pay()">
+				<div style="width: 156px;height: 70px;margin:0 auto;background: url('resources/images/bgimg21.png') no-repeat;"></div>
+				<div style="width: 114px;height: 210px;margin:0 auto;;background: url('resources/images/bgimg22.png') no-repeat;"></div>
+			</div>
+			<div style="width: 145px;height: 310px;float: left;margin-left:70px;margin-top: 40px;cursor: pointer;" onclick="pay()">
+				<div style="width: 145px;height: 80px;margin:0 auto;background: url('resources/images/bgimg23.png') no-repeat;"></div>
+				<div style="width: 114px;height: 230px;margin:0 auto;;background: url('resources/images/bgimg24.png') no-repeat;"></div>
+			</div>
+		
+		</div>
+		
+		
+		
+		
+		
 		<!-- 真新会员页面样式div -->
-		<div style=" width: 100%; height: 1600px;">
+		<div style=" width: 100%; height: 1000px;">
 			<!--立即开通真心会员页面  -->
 			<div
-				style="float: left;margin-left:100px; width: 800px;height: 1500px; ">
-				<div class="Membership" style="width: 800px;height: 200px;"></div>
-				<div style="margin-top:50px;width: 800px;height: 300px;">
-					<div id="no1" onmouseover="showRed1()" onmouseout="hiddenRed1()"
-						class="MembershipServiceDivRed"
-						style="width: 260px;height: 300px;float: left;">
-						<br> <br>
-						<hr>
-						<font style="font-size: 26px;font-family: 黑体">真心会员12个月</font><br>
-						<br> <font style="font-size: 30px;font-family: 黑体"><strong>1.1元</strong>/天</font><br>
-						<br>
-						<hr>
-						超值会员价<font style="font-size: 26px;font-family: 黑体">399</font>元<br>
-						<br> <input type="button" name="year" value="立即开通" onclick=""
-							style="width: 150px;height: 40px;background: white;font-size:16px;font-family:黑体;color: red;border: 1px;border-radius:5px;cursor: pointer;">
-					</div>
-					<div id="no2" onmouseover="showRed2()" onmouseout="hiddenRed2()"
-						class="MembershipServiceDivRed"
-						style="width: 260px;height: 300px;float: left;margin-left: 10px;">
-						<br> <br>
-						<hr>
-						<font style="font-size: 26px;">真心会员3个月</font><br> <br> <font
-							style="font-size: 30px;"><strong>4.3元</strong>/天</font><br> <br>
-						<hr>
-						超值会员价<font style="font-size: 26px;">389</font>元<br> <br>
-						<input type="button" name="quarter" value="立即开通" onclick=""
-							style="width: 150px;height: 40px;background: white;font-size:16px;font-family:黑体;color: red;border: 1px;border-radius:5px;cursor: pointer;">
-					</div>
-					<div id="no3" onmouseover="showRed3()" onmouseout="hiddenRed3()"
-						class="MembershipServiceDivRed"
-						style="width: 260px;height: 300px; margin-left: 10px;float: left;">
-						<br> <br>
-						<hr>
-						<font style="font-size: 26px;">真心会员1个月</font><br> <br> <font
-							style="font-size: 30px;"><strong>8.6元</strong>/天</font><br> <br>
-						<hr>
-						超值会员价<font style="font-size: 26px;">259</font>元<br> <br>
-						<input type="button" name="month" value="立即开通" onclick=""
-							style="width: 150px;height: 40px;background: white;font-size:16px;font-family:黑体;color: red;border: 1px;border-radius:5px;cursor: pointer;">
-					</div>
-				</div>
+				style="float: left;margin-left:100px; width: 800px;height: 1000px; ">
+				<div style="width: 100%;height: 63px;margin: 0 auto;margin-top:20px;background: url('resources/images/bgimg25.png') no-repeat;"></div>
 				<div
 					style="width: 100%;height: 800px;background:white;margin-top: 20px;">
 					<table>
@@ -248,53 +248,73 @@ body{
 							<td colspan="2" style="text-align: center;"><input
 								type="button"
 								style="background: #FF6347;border: 1px;border-radius:3px;width: 200px;height: 40px;color: white;"
-								value="立即开通"> <font style="color: #FF6347">399元/年</font>
+								value="立即开通" onclick="pay()"> <font style="color: #FF6347">399元/年</font>
 							</td>
 						</tr>
 					</table>
 	
 				</div>
 			</div>
-			<div style="float: left;margin-left:20px; width: 301px;height:730px;">
+			<div style="float: left;margin-left:20px; width: 350px;height:730px;margin-top: 20px;">
 				<div
-					style="width: 300px;height:240px; border: 1px solid #ababab;border-radius:10px;text-align: center;background-color: white;">
+					style="width: 350px;">
 					<div class="double"></div>
 					<div class="doubleImg">
 						<div
-							style="float: left;margin-left:10px;margin-top:10px;width:80px;height: 80px;border-radius:40px;background-image: url('resources/images/1.JPG');"></div>
+							style="float: left;width:110px;height: 110px;border: 3px solid orange;border-radius:5px;">
+							<img width="110px" height="110px" alt="" src="resources/images/11.png">
+						</div>
 						<div
-							style="float: left;margin-left:10px;margin-top:10px;width:80px;height: 80px;border-radius:45px;background-image: url('resources/images/3.jpg');"></div>
+							style="float: left;width:110px;height: 110px;border: 3px solid orange;border-radius:5px;">
+							<img width="110px" height="110px" alt="" src="resources/images/2.png">
+						</div>
 						<div
-							style="float: left;margin-left:10px;margin-top:10px;width:80px;height: 80px;border-radius:45px;background-image: url('resources/images/4.jpg');"></div>
+							style="float: left;width:110px;height: 110px;border: 3px solid orange;border-radius:5px;">
+							<img width="110px" height="110px" alt="" src="resources/images/3.png">
+						</div>
 						<div
-							style="float: left;margin-left:10px;margin-top:10px;width:80px;height: 80px;border-radius:45px;background-image: url('resources/images/5.jpg');"></div>
+							style="float: left;width:110px;height: 110px;border: 3px solid orange;border-radius:5px;">
+							<img width="110px" height="110px" alt="" src="resources/images/4.png">
+						</div>
 						<div
-							style="float: left;margin-left:10px;margin-top:10px;width:80px;height: 80px;border-radius:45px;background-image: url('resources/images/6.jpg');"></div>
+							style="float: left;width:116px;height: 116px;">
+							<img width="116px" height="116px" alt="" src="resources/images/5.png">
+						</div>
 						<div
-							style="float: left;margin-left:10px;margin-top:10px;width:80px;height: 80px;border-radius:45px;background-image: url('resources/images/2.jpg');"></div>
+							style="float: left;width:110px;height: 110px;border: 3px solid orange;border-radius:5px;">
+							<img width="110px" height="110px" alt="" src="resources/images/6.png">
+						</div>
+						<div
+							style="float: left;width:110px;height: 110px;border: 3px solid orange;border-radius:5px;">
+							<img width="110px" height="110px" alt="" src="resources/images/7.png">
+						</div>
+						<div
+							style="float: left;width:110px;height: 110px;border: 3px solid orange;border-radius:5px;">
+							<img width="110px" height="110px" alt="" src="resources/images/8.png">
+						</div>
+						<div
+							style="float: left;width:110px;height: 110px;border: 3px solid orange;border-radius:5px;">
+							<img width="110px" height="110px" alt="" src="resources/images/9.png">
+						</div>
 					</div>
-				</div>
-				<div
-					style="width: 300px;height:300px; border: 1px solid #ababab;border-radius:5px;margin-top: 10px;background-color: white;">
-					<font
-						style="font-family: 黑体;color: black;font-size:16px;margin-left: 5px;margin-top: 5px">珍心问答</font><br>
-					<br> <font
-						style="color: black;font-size: 16px;margin-left: 5px;">已成功付费，但没有显示珍心会员图标怎么办？</font><br>
-					<br> <font
-						style="color: #ababab;font-size: 15px;margin-left: 5px;">可将成功支付截图反馈给客服人员，让客服人员协助。</font><br>
-					<br> <font
-						style="color: black;font-size: 16px;margin-left: 5px;">如果续费珍心会员，可以享受优惠吗？</font><br>
-					<br> <font
-						style="color: #ababab;font-size: 15px;margin-left: 5px;">可以享受8折优惠。</font><br>
-					<br> <font
-						style="color: black;font-size: 16px;margin-left: 5px;">是否可以随时退费？</font><br>
-					<br> <font
-						style="color: #ababab;font-size: 15px;margin-left: 5px;">不能。</font><br>
 				</div>
 			</div>
 	
 		</div>
-		<!--新轮播end-->
+		<div style="width: 1350px;height: 270px;margin: 0 auto;background: #ffbdc5">
+			<div style="width: 100%;height: 120;text-align: center;">
+				<br>
+				<font style="color: #ff6347;font-size: 30px;">缘都牵线</font><br>
+				<font style="color: #ff6347;font-size: 20px;">专业红娘一对一、全程跟踪服务<br>
+				缘都婚恋</font>
+			</div>
+			<div style="width: 60%;height: 130px;margin: 0 auto;">
+				<div style="width: 113px;height: 130px;float:left;background: url('resources/images/bgimg28.png');"></div>
+				<div style="width: 113px;height: 130px;margin-left:100px;float:left;background: url('resources/images/bgimg29.png');"></div>
+				<div style="width: 113px;height: 130px;margin-left:100px;float:left;background: url('resources/images/bgimg30.png');"></div>
+				<div style="width: 113px;height: 130px;margin-left:100px;float:left;background: url('resources/images/bgimg31.png');"></div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

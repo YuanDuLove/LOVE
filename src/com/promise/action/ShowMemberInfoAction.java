@@ -1,7 +1,9 @@
 package com.promise.action;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.promise.service.ShowMemInfoService;
@@ -30,7 +32,12 @@ public class ShowMemberInfoAction {
 		if(job == null || job.equals("")){
 			job = "未填写";
 		}
-		inner = (String) msg.get("USERINNER");
+		String innerStr = (String) msg.get("USERINNER");
+		if(innerStr == null || "".equals(innerStr) || innerStr == ""){
+			inner = "主人很懒哦~还没有填写内心独白";
+		} else {
+			inner = innerStr;
+		}
 		sex = (String)msg.get("SEX");
 		weight = (String) msg.get("WEIGHT");
 		if(weight == null || "".equals(weight) || weight == ""){
@@ -214,10 +221,30 @@ public class ShowMemberInfoAction {
 			house = "租房";
 		} 
 		
-		
 		userphoto = (String)msg.get("USERPHOTO");
 		constellation = Tools.getConstellation(Integer.valueOf(DateTools.getMonth(DateTools.stringToDate(birthday))), Integer.valueOf(DateTools.getDay(DateTools.stringToDate(birthday))));
 		zodiac = Tools.getZodiac(Integer.valueOf(DateTools.getYear(DateTools.stringToDate(birthday))));
+		
+		//求魅力值
+		Map charmCount = this.service.charmCount();
+		if(charmCount.size() == 0){
+			count = "0";
+		} else{
+			count = (String) charmCount.get("COUNT");
+		}
+		
+		String photoStr = (String) msg.get("PHOTOS");
+		photos = new ArrayList();
+		Map img ;
+		if(photoStr != null && !"".equals(photoStr)){
+			String [] photo = photoStr.split(";");
+			for(int i = 1;i < photo.length;i++){
+				img = new HashMap();
+				img.put("PHOTOS", photo[i]);
+				photos.add(img);
+			}
+		}
+		
 		return "memInfo";
 	}
 
@@ -237,6 +264,14 @@ public class ShowMemberInfoAction {
 		this.id = id;
 	}
 	
+	private String count = null;
+	public String getCount() {
+		return count;
+	}
+
+	public void setCount(String count) {
+		this.count = count;
+	}
 
 	private String userphoto = null;
 	private Map msg = null;
@@ -291,6 +326,7 @@ public class ShowMemberInfoAction {
 	private String likemusic = null;
 	private String likeanimal = null;
 	private String likeTV = null;
+	private List photos = null;
 
 	public String getUserphoto() {
 		return userphoto;
@@ -406,6 +442,14 @@ public class ShowMemberInfoAction {
 
 	public String getWeight() {
 		return weight;
+	}
+
+	public List getPhotos() {
+		return photos;
+	}
+
+	public void setPhotos(List photos) {
+		this.photos = photos;
 	}
 
 	public void setWeight(String weight) {

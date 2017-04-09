@@ -1,6 +1,8 @@
 package com.promise.action.userdata;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.opensymphony.xwork2.ActionContext;
@@ -24,11 +26,31 @@ public class ShowUserPhotoAction {
 			userImg = userImg.replaceAll("\\\\", "/");
 		}
 		
+		String photoStr = (String) msg.get("PHOTOS");
+		photos = new ArrayList();
+		Map img ;
+		if(photoStr != null && !"".equals(photoStr)){
+			String [] photo = photoStr.split(";");
+			for(int i = 1;i < photo.length;i++){
+				img = new HashMap();
+				img.put("PHOTOS", photo[i]);
+				photos.add(img);
+			}
+		}
+		
 		System.out.println("11111111"+userImg);
 		return "main";
 	}
 	
 	private ShowUserPhotoService service;
+	private List photos = null;
+	
+	public List getPhotos() {
+		return photos;
+	}
+	public void setPhotos(List photos) {
+		this.photos = photos;
+	}
 	public void setService(ShowUserPhotoService service) {
 		this.service = service;
 	}

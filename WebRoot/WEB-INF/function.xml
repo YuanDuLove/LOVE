@@ -17,6 +17,7 @@
 	</bean>
 	<bean id="showMainService" class="com.promise.service.impl.ShowMainPageServiceImpl">
 		<property name="dao" ref="userinfodao"/>
+		<property name="dao2" ref="msginfodao"/>
 	</bean>
 
 	<!-- 登录模块 -->
@@ -33,6 +34,7 @@
 	</bean>
 	<bean id="memberInfoService" class="com.promise.service.impl.ShowMemInfoServiceImpl">
 		<property name="dao" ref="userinfodao"/>
+		<property name="dao2" ref="msginfodao"/>
 	</bean>
 	
 	<!-- 发送约会消息功能 -->
@@ -51,8 +53,24 @@
 	<bean id="addMatchMsg" class="com.promise.action.AddDateMsgAction">
 		<property name="service" ref="addMsgService"/>
 	</bean>
+	<!-- 发送暗送秋波消息功能 -->
+	<bean id="addOgleMsg" class="com.promise.action.AddOgleMsgAction">
+		<property name="service" ref="addMsgService"/>
+	</bean>
+	<!-- 发送点赞消息功能 -->
+	<bean id="addZanMsg" class="com.promise.action.AddZanMsgAction">
+		<property name="service" ref="addMsgService"/>
+	</bean>
 	
 	<bean id="addMsgService" class="com.promise.service.impl.AddMsgServiceImpl">
+		<property name="dao" ref="msginfodao"/>
+	</bean>
+	
+	<!-- 未读消息减一 -->
+	<bean id="checkMsg" class="com.promise.action.CheckMsgAction">
+		<property name="service" ref="checkMsgService"/>
+	</bean>
+	<bean id="checkMsgService" class="com.promise.service.impl.CheckMsgServiceImpl">
 		<property name="dao" ref="msginfodao"/>
 	</bean>
 	
@@ -61,6 +79,25 @@
 		<property name="modifyService" ref="modifyPhotoService"/>
 	</bean>
 	<bean id="modifyPhotoService" class="com.promise.service.impl.ModifyUserPhotoServiceImpl">
+		<property name="dao" ref="userinfodao"/>
+	</bean>
+	
+	<!-- 消息中心 -->
+	<bean id="showMsg" class="com.promise.action.ShowMsgAction">
+		<property name="service" ref="showMsgsService"/>
+	</bean>
+	<bean id="showNotice" class="com.promise.action.ShowNoticeAction">
+		<property name="service" ref="showMsgsService"/>
+	</bean>
+	<bean id="showMsgsService" class="com.promise.service.impl.ShowMsgsServiceImpl">
+		<property name="dao" ref="msginfodao"/>
+	</bean>
+	
+	<!-- 用户上传照片 -->
+	<bean id="uploadImg" class="com.promise.action.UploadImgAction">
+		<property name="service" ref="uploadImgService"/>
+	</bean>
+	<bean id="uploadImgService" class="com.promise.service.impl.UploadPhotoServiceImpl">
 		<property name="dao" ref="userinfodao"/>
 	</bean>
 	

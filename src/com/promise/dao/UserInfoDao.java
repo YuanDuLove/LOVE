@@ -156,4 +156,10 @@ public interface UserInfoDao {
 	 * @throws Exception
 	 */
 	public Map queryUserPhoto() throws Exception;
+	
+	/**
+	 * 用户上传图片
+	 * @throws Exception
+	 */
+	public boolean uploadImg() throws Exception;
 }

@@ -1,10 +1,11 @@
 @CHARSET "UTF-8";
 body{
-	background-color: #f2f2f2;
+	/*background-color: #f2f2f2;*/
+	background: url("../images/bgimg.jpg") center;
 }
 .homeRegDiv{
 	margin: 0 auto;
-	height:600px;
+	height:628px;
 	width:100%;
 	background: url("../images/homeposter.jpg") center;
 	z-index: 1;
@@ -13,13 +14,13 @@ body{
 .homeRegTextDiv{
 	height:400px; 
 	width: 300px;
-	background-color: rgba(0,0,0,.3);
+	/*background-color: rgba(0,0,0,.3);*/
 	/*当上一行的透明度不起作用的时候执行。这句话的意思本来是用来做渐变的。但是这个地方不需要渐变。所以两个颜色都设置成了相同的颜色。*/
 	/*这个颜色“#19ffffff”是由两部分组成的。第一部是#号后面的19 。是rgba透明度0.1的IEfilter值。从0.1到0.9每个数字对应一个IEfilter值。*/
 	/*第二部分是19后面的六位 。这个是六进制的颜色值。要跟rgb函数中的取值相同*/
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
 	margin-top: 50px;
-	margin-right:100px;
+	margin-right:150px;
 	float: right;
 	position: relative;
 	z-index: 2;
@@ -29,15 +30,14 @@ h3{
 	text-align: center;
 }
 .homeRegButton{/*注册按钮*/
-	background-color:#FFBBFF;
+	background-color:#F795C1;
 	height:40px;
-	width:120px ;
+	width:240px ;
 	margin:0 auto;
 	border:1px;
-	border-radius:5px;
-	font-size: 16px;
+	font-size: 20px;
 	color: white;
-	font-family: 黑体;
+	font-family: 宋体;
 }
 h1{
 	text-align: center;
@@ -46,7 +46,6 @@ h1{
 .homeMemberDiv{/*会员展示框*/
 		height:500px; 
 		width: 1350px;
-		background-color: #eaeaea;
 		text-align: center;
 }
 .homeSuccessfulDiv{/*成功会员展示框*/
@@ -56,7 +55,7 @@ h1{
 }
 .homeMemberDivDiv{/*会员信息框中的Div的展示*/
 		height:300px; 
-		width: 900px;
+		width: 1036px;
 		margin: 0 auto;
 		
 }
@@ -73,8 +72,8 @@ a:HOVER {
 	color: #FF7256;
 }
 .LoginImmediately{/*我是会员立即登录链接*/
-	font-size: 6px;
-	color: white;
+	font-size: 12px;
+	color: black;
 }
 .Memberservice{/*红娘页面*/
 	width: 960px;

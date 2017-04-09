@@ -17,7 +17,7 @@ public class AddDateMsgAction {
 		Map userinfo1 = (Map) ActionContext.getContext().getSession().get("userinfo");
 		String sendid = (String) userinfo1.get("ID");
 		dto.put("sendID", sendid);
-		//消息类型：发邮件：1,约会：2，打招呼：3，委托红娘：4
+		//消息类型：发邮件：1,约会：2，打招呼：3，委托红娘：4   暗送秋波：5
 		dto.put("type", "2");
 		//消息标志：已读：1 未读：2 删除：3
 		dto.put("flag", "2");

@@ -12,6 +12,7 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="keywords" content="缘都婚恋,潍坊缘都婚恋,缘都婚恋服务平台">
+<link href="resources/images/logoico.ico" rel="shortcut icon">
 <title>缘都婚恋:一个专注婚恋的网站</title>
 <link rel="stylesheet" type="text/css"
 	href="./resources/css/homecss.css">
@@ -25,17 +26,19 @@
 	height:650px;
 	background:#fff;
 }
-
+/*
 #canvas {
 	position:absolute;
 	width:1350px;
 	height:500px;
 	background:#fff;
 }
+*/
 </style>
 
-<script type="text/javascript" src="resources/js/ge1doot.js"></script>
 <script type="text/javascript">
+	
+
 	function regUser(form) {
 		var account = form.account.value;
 		var pwd = form.pwd.value;
@@ -50,11 +53,11 @@
 		
 	}
 	
-	
+/*	
 "use strict";
 
 (function () {
-	/* ==== definitions ==== */
+	 ==== definitions ==== 
 	var diapo = [], layers = [], ctx, pointer, scr, camera, light, fps = 0, quality = [1,2],
 	// ---- poly constructor ----
 	Poly = function (parent, face) {
@@ -206,7 +209,7 @@
 		fps++;
 		requestAnimFrame(run);
 	};
-	/* ==== prototypes ==== */
+	 ==== prototypes ==== 
 	Poly.prototype.draw = function () {
 		// ---- color light ----
 		var c = this.color;
@@ -230,7 +233,7 @@
 			ctx.fill();
 		}
 	}
-	/* ==== image onload ==== */
+	 ==== image onload ==== 
 	Diapo.prototype.loaded = function (img) {
 		// ---- create points ----
 		var d = [-1,1,1,-1,1,1,-1,-1];
@@ -244,7 +247,7 @@
 			);
 		}
 	}
-	/* ==== images draw ==== */
+	 ==== images draw ==== 
 	Diapo.prototype.draw = function () {
 		// ---- visibility ----
 		this.pc.projection();
@@ -389,6 +392,7 @@
 		imagesPath: ""
 	}
 });
+*/
 
 </script>
 
@@ -397,76 +401,104 @@
 <body>
 	<div style="width: 1350px;margin: 0 auto;">
 		<div style="width: 1350px;margin: 0 auto;">
-			<div style="width: 1350px;height: 80px">
+			<div style="width: 1350px;height: 85px">
 				<a href="homepage.jsp">
 					<div
-						style="margin-left:100px;background-image:url('resources/images/logo.png') ;width:91px;height: 80px;float: left;">
+						style="margin-left:100px;background-image:url('resources/images/logo.png') ;width:442px;height: 85px;float: left;">
 					</div> 
 				</a>
-				<div style="font-size: 24px;padding-top: 30px;">1亿 "会员" |
-					"实名婚恋网开创者"只有爱无需等待</div>
 			</div>
 			<s:property value="msg" />
 			<div class="homeRegDiv">
 				<div class="homeRegTextDiv">
-					<h3>一分钟注册，享一辈子幸福!</h3>
-					<hr>
-					<form action="" method="post">
-						<div style="width:100%;height:120px;text-align: center;">
-							账&nbsp;&nbsp;号:<input name="account" type="text" style="width: 150px;height: 40px;color: red;border: 1px solid #cdcdcd;border-radius:3px;"><br><br>
-							密&nbsp;&nbsp;码:<input name="pwd" type="password" style="width: 150px;height: 40px;color: red;border: 1px solid #cdcdcd;border-radius:3px;">
-						</div>
-						<div style="width: 100%;height: 30px;text-align: center;">
-							<input type="button" name="reg" value="登录" class="homeRegButton" onclick="regUser(this.form)">
-						</div>
-						<div align="center" style="font-size: 24px;padding-top: 30px;">
-							<a class="LoginImmediately" href="Regpage.jsp">没有账号？立即注册</a>
-						</div>
-					</form>
+					<div style="background-image: url('resources/images/logo001.jpg') ;width: 244px;height: 58px;margin: 0 auto">
+					</div>
+					<div style="margin-top: 15px;">
+						<form action="" method="post">
+							<div style="width:100%;height:120px;">
+								<div style="width: 100%;height: 45px;">
+									<div style="float: left;">
+										<img src="resources/images/account.png">
+									</div>
+									<div style="float: left;">
+										<input name="account" type="text" style="width: 240px;height: 41px;color: red;background-color:#c9eef3 ;border: 1px solid #c9eef3;border-radius:3px;">
+									</div>
+								</div>
+								<div style="width: 100%;height: 45px;margin-top: 10px;">
+									<div style="float: left;">
+										<img src="resources/images/pwd.png">
+									</div>
+									<div style="float: left;">
+										<input name="pwd" type="password" style="width: 240px;height: 43px;color: red;background-color:#c9eef3 ;border: 1px solid #c9eef3;border-radius:3px;">
+									</div>
+								</div>
+							</div>
+							<div style="width: 100%;height: 30px;text-align: center;">
+								<input type="button" name="reg" value="登录" class="homeRegButton" onclick="regUser(this.form)">
+							</div>
+							<div align="center" style="font-size: 24px;padding-top: 30px;">
+								<a class="LoginImmediately" href="Regpage.jsp">没有账号？立即注册</a>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
-			<div style="width: 1350px;height: 600px;text-align: center;">
-				<div style="width:100%;height: 100px;padding-top: 80px;">
-					<font style="font-family: 宋体;font-size: 28px;color: #404040">红娘服务</font><br><br>
-					<font style="font-family: 黑体;font-family: 22px;color: #666666">在缘都，你可以得到什么？</font>
+			<div style="width: 1350px;height: 500px;text-align: center;">
+				<div style="width:100%;height: 64px;padding-top: 30px;">
+					<font style="font-family: 宋体;font-size: 24px;">红/娘/服/务</font><br>
+					<font style="font-family: 宋体;font-family: 18px;">在缘都，你可以得到什么？</font>
 				</div>
-				<div style="width: 100%;height: 380px;">
-					<img alt="" src="resources/images/service1.jpg">
-					<img alt="" src="resources/images/service2.jpg">
-					<img alt="" src="resources/images/service3.jpg">
+				<div style="width: 1036px;height: 380px;margin: 0 auto">
+					<div style="width: 259px;height:340px;text-align: center;float: left;">
+						<img alt="" src="resources/images/service11.jpg">
+						<img alt="" src="resources/images/service12.jpg">
+					</div>
+					<div style="width: 259px;height:340px;text-align: center;float: left;">
+						<img alt="" src="resources/images/service21.jpg">
+						<img alt="" src="resources/images/service22.jpg">
+					</div>
+					<div style="width: 259px;height:340px;text-align: center;float: left;">
+						<img alt="" src="resources/images/service31.jpg">
+						<img alt="" src="resources/images/service32.jpg">
+					</div>
+					<div style="width: 259px;height:340px;text-align: center;float: left;">
+						<img alt="" src="resources/images/service41.jpg">
+						<img alt="" src="resources/images/service42.jpg">
+					</div>
 				</div>
 			</div>
 			<!-- 单身会员展示-->
 			<div class="homeMemberDiv">
-				<div style="width: 100%;height: 80px;padding-top: 50px;">
-					<font style="font-family: 宋体;font-size: 28px;color: #404040">1亿单身用户的选择</font><br><br>
-					<font style="font-family: 黑体;font-family: 22px;color: #666666">TA们都在寻爱，你还在等什么呢？</font>
+				<div style="width: 100%;height: 80px;">
+					<font style="font-family: 宋体;font-size: 28px;color: black;">1亿单身用户的选择</font><br>
+					<font style="font-family: 宋体;font-size: 36px;color: red">TA</font><font style="font-family: 宋体;font-family: 22px;color: black;">们都在寻爱，你还在等什么呢？</font>
 				</div>
 				<div class="homeMemberDivDiv">
-					<div style="width: 225px;height: 300px;float: left;">
-						<img id="img" width="225px" height="300px" alt="" src="resources/images/service10-1.jpg">
+					<div style="width: 264px;height: 266px;float: left;">
+						<img id="img" width="264px" height="266px" alt="" src="resources/images/service10-1.jpg">
 					</div>
-					<div style="width: 225px;height: 300px;float: left;">
-						<div style="width: 225px;height: 150px;">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service1-1.jpg">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service2-1.jpg">
+					<div style="width: 225px;height: 266px;float: left;">
+						<div style="width: 256px;height: 142px;">
+							<img id="img" style="float: left;width:128px;height:142px" alt="" src="resources/images/service1-1.jpg">
+							<img id="img" style="float: left;width:128px;height:142px" alt="" src="resources/images/service2-1.jpg">
 						</div>
-						<div style="width: 225px;height: 150px;">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service3-1.jpg">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service4-1.jpg">
+						<div style="width: 256px;height: 124px;">
+							<img id="img" style="float: left;width:128px;height:124px" alt="" src="resources/images/service3-1.jpg">
+							<img id="img" style="float: left;width:128px;height:124px" alt="" src="resources/images/service9-1.jpg">
 						</div>
 					</div>
-					<div style="width: 225px;height: 300px;float: left;">
-						<img id="img" width="225px" height="300px" alt="" src="resources/images/service9-1.jpg">
+					<div style="width: 271px;height: 266px;float: left;">
+						<img id="img" width="190px" height="266px" alt="" src="resources/images/service4-1.jpg" style="float: left;">
+						<img id="img" width="81px" height="266px" alt="" src="resources/images/service4-12.jpg" style="float: left;">
 					</div>
-					<div style="width: 225px;height: 300px;float: left;">
-						<div style="width: 225px;height: 150px;">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service5-1.jpg">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service6-1.jpg">
+					<div style="width: 225px;height: 266px;float: left;">
+						<div style="width: 256px;height: 142px;">
+							<img id="img" style="float: left;width:128px;height:142px" alt="" src="resources/images/service5-1.jpg">
+							<img id="img" style="float: left;width:128px;height:142px" alt="" src="resources/images/service6-1.jpg">
 						</div>
-						<div style="width: 225px;height: 150px;">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service7-1.jpg">
-							<img id="img" style="float: left;width:112px;height:150px" alt="" src="resources/images/service11-1.jpg">
+						<div style="width: 256px;height: 124px;">
+							<img id="img" style="float: left;width:128px;height:124px" alt="" src="resources/images/service7-1.jpg">
+							<img id="img" style="float: left;width:128px;height:124px" alt="" src="resources/images/service11-1.jpg">
 						</div>
 					</div>
 				</div>
@@ -480,26 +512,43 @@
 					</div>
 					<canvas id="canvas">你的浏览器不支持HTML5画布技术，请使用谷歌浏览器。</canvas>
 			 </div>
-			 
-			<div class="homeSuccessfulDiv">
-				<div
-					style="background-color: pink;width: 100%;height: 80px;font-size: 24px;padding-top: 30px;">成功牵手在今天</div>
-				<div class="homeSuccessfulDivDiv"></div>
-			</div>
-			-->
-			
-			<div style="width: 1350px;height: 600px;text-align: center;">
-				<div style="width:100%;height: 100px;padding-top: 80px;">
-					<font style="font-family: 宋体;font-size: 28px;color: #404040">配套服务</font><br><br>
-					<font style="font-family: 黑体;font-family: 22px;color: #666666">在缘都，你可以享受到的服务有哪些？</font>
+			 -->
+			<div style="width: 1350px;height:400px;text-align: center;">
+				<div style="width:100%;height: 64px;padding-top: 30px;">
+					<font style="font-family: 宋体;font-size: 24px;">成功故事</font><br>
+					<font style="font-family: 宋体;font-family: 18px;">未来漫长的日子，有你在身边</font>
 				</div>
-				<div style="width: 100%;height: 380px;">
+				<div style="width: 1052px;height: 302px;margin: 0 auto">
+					<div style="width: 263px;height:302px;text-align: center;float: left;">
+						<img alt="" src="resources/images/success1.jpg">
+					</div>
+					<div style="width: 263px;height:302px;text-align: center;float: left;">
+						<img alt="" src="resources/images/success21.jpg" style="float: left;width: 82px;height:302px;">
+						<img alt="" src="resources/images/success22.jpg" style="float: left;width: 181px;height:302px;">
+					</div>
+					<div style="width: 263px;height:302px;text-align: center;float: left;">
+						<img alt="" src="resources/images/success3.jpg">
+					</div>
+					<div style="width: 263px;height:302px;text-align: center;float: left;">
+						<img alt="" src="resources/images/success4.jpg">
+					</div>
+				</div>
+			</div>
+			
+			
+			<div style="width: 1350px;height: 400px;text-align: center;">
+				<div style="width:100%;height: 100px;padding-top: 80px;">
+					<font style="font-family: 宋体;font-size: 28px;color: black;">配套服务</font><br><br>
+					<font style="font-family: 宋体;font-family: 22px;color: black;">在缘都，你可以享受到的服务有哪些？</font>
+				</div>
+				<div style="width: 100%;height: 300px;">
 					<img alt="" src="resources/images/wedding.jpg">
-					<img alt="" src="resources/images/car.jpg">
 					<img alt="" src="resources/images/hotel.jpg">
 					<img alt="" src="resources/images/travel.jpg">
+					<img alt="" src="resources/images/car.jpg">
 				</div>
 			</div>
+			<!--html5关闭动画相册
 			<div class="homeMemberDivHtml">
 				 	<div style="width: 100%;height: 80px;padding-top: 50px;text-align: center;">
 						<font style="font-family: 宋体;font-size: 28px;color: #404040">成功案例</font><br><br>
@@ -507,7 +556,21 @@
 					</div>
 					<canvas id="canvas">你的浏览器不支持HTML5画布技术，请使用谷歌浏览器。</canvas>
 			 </div>
-			
+			-->
+			<div style="width: 1350px;height: 180px;background: #d27d8b">
+				<div style="width: 800px;height: 180px;margin: 0 auto;">
+					<div style="float: left;width: 100px;height: 100px;margin-top: 40px;">
+						<img width="100px" height="100" alt="" src="resources/images/qrcode.png">
+					</div>
+					<div style="float: left;width: 600px;height: 100px;margin-top: 40px;margin-left: 20px;">
+						联系人：臧晓辉&nbsp;&nbsp;13573650275<br>
+						电话：86-0536-7667933<br>
+						邮箱地址：z_promise@163.com<br>
+						网址：www.z-promise.com<br>
+						地址：山东省潍坊市坊子区北海路与凤凰大街交叉路口青年创业园B座802<br>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

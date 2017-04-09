@@ -95,7 +95,7 @@
 		window.location.href = "showRegInfoAction.action";
 	}
 	function showMsgInfo(){
-		window.location.href="../error.jsp";
+		window.location.href="../showMsgAction.action";
 	}
 	function check(){
 		var name = document.getElementById("name").value;
@@ -185,8 +185,10 @@
 							<%
 								Map userinfo = (Map)session.getAttribute("userinfo");
 								String nickname = (String)userinfo.get("NIKENAME");
+							 	String userid = (String)userinfo.get("ID");
 							 %>
-							 <%=nickname %>
+							 <!-- <%=nickname %> -->
+							 爱相随-<%=userid %>
 						</a>
 					</div>
 					<div>权限</div>

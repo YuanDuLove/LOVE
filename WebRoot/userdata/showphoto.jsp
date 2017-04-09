@@ -15,6 +15,7 @@
 <title>缘都婚恋服务平台</title>
 <link rel="stylesheet" type="text/css"
 	href="../resources/css/userdatacss.css">
+
 <script type="text/javascript">
 	function showbasicinfoSubDiv() {
 		if(document.getElementById("basicinfoSubDiv").style.display == "none"){
@@ -95,7 +96,10 @@
 		window.location.href = "showRegInfoAction.action";
 	}
 	function showMsgInfo(){
-		window.location.href="../error.jsp";
+		window.location.href="../showMsgAction.action";
+	}
+	function uploadImg(){
+		window.location.href = "../uploadImg.jsp";
 	}
 </script>
 <style type="text/css">
@@ -103,7 +107,19 @@
 	width: 200px;
 	height:200px;
 }
+a,a:hover{border:none;text-decoration:none;}
+img,a img{border:none;}
+pre{overflow-x:scroll;background:#ffffff;border:1px solid #cecece;padding:10px;}
+.clear{clear:both;}
+.zoomed > .container{-webkit-filter:blur(3px);filter:blur(3px);}
+.container{width:860px;margin:20px auto;}
+.gallery{list-style-type:none;float:left;}
+.gallery li{float:left; width:120px; height:120px;}
+.gallery li:nth-child(6n){padding-right:0;}
+.gallery li a,.gallery li img{float:left;}
 </style>
+<!--图片弹出层样式 必要样式-->
+<link rel="stylesheet"  href="../resources/css/zoom.css" media="all" />
 </head>
 <body>
 <s:property value="msg"/>
@@ -175,8 +191,10 @@
 							<%
 								Map userinfo = (Map)session.getAttribute("userinfo");
 								String nickname = (String)userinfo.get("NIKENAME");
+							 	String userid = (String)userinfo.get("ID");
 							 %>
-							 <%=nickname %>
+							 <!-- <%=nickname %> -->
+							 爱相随-<%=userid %>
 						</a>
 					</div>
 					<div>权限</div>
@@ -294,11 +312,32 @@
 				<!-- 注册信息百分比div end -->
 				<!-- 信息修改div start -->
 				<div style="background:white">
+					<br>
+					<input type="button" value="上传照片" onclick="uploadImg()">
 					<div class="modifyInfoDiv">
 						<br><br>
 						<img class="userphoto" name="userImg" alt="" src="<%=request.getContextPath()%>/images/<s:property value="userImg"/>">
 					</div>
+					<div class="container">
+						<ul class="gallery">
+							<s:if test="photos.size()!=0">
+								<s:iterator value="photos" status="st">
+									<li>
+										<a href="<%=request.getContextPath()%>/images/<s:property value="PHOTOS"/>">
+											<img width="100px" height="100px" name="userImg" alt=""
+												src="<%=request.getContextPath()%>/images/<s:property value="PHOTOS"/>"
+											>
+										</a>
+									</li>
+								</s:iterator>
+							</s:if>
+						</ul>
+						<div class="clear"></div>
+					</div>
+						
 				</div>
+				<script src="../resources/js/jquery-1.9.1.min.js"></script>
+				<script src="../resources/js/zoom.min.js"></script>
 				<!-- 信息修改div end -->
 			</div>
 		</div>

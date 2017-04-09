@@ -57,6 +57,7 @@ public class ShowQueryInfoAction {
 	private String marry = null;
 	private String bheight = null;
 	private String eheight = null;
+	private String area = null;
 	public List getInfos() {
 		return infos;
 	}
@@ -98,6 +99,12 @@ public class ShowQueryInfoAction {
 	}
 	public void setEheight(String eheight) {
 		this.eheight = eheight;
+	}
+	public String getArea() {
+		return area;
+	}
+	public void setArea(String area) {
+		this.area = area;
 	}
 	
 

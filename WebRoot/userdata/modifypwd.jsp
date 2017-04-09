@@ -95,7 +95,7 @@
 		window.location.href = "showRegInfoAction.action";
 	}
 	function showMsgInfo(){
-		window.location.href="../error.jsp";
+		window.location.href="../showMsgAction.action";
 	}
 </script>
 </head>

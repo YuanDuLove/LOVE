@@ -279,7 +279,7 @@ public class UserInfoDaoImpl  extends JdbcDaoSupport implements UserInfoDao {
 	public Map queryMateInfo() throws Exception {
 	   
 		StringBuilder sql = new StringBuilder()
-		.append("SELECT U.MATE_SEX MATE_SEX,U.MATE_BAGE MATE_BAGE,U.MATE_EAGE MATE_EAGE,U.MATE_AREA MATE_AREA,U.MATE_NATIVE MATE_NATIVE,")
+		.append("SELECT U.NIKENAME NIKENAME, U.MATE_SEX MATE_SEX,U.MATE_BAGE MATE_BAGE,U.MATE_EAGE MATE_EAGE,U.MATE_AREA MATE_AREA,U.MATE_NATIVE MATE_NATIVE,")
 		.append("       U.MATE_MARRYSTATUS MATE_MARRYSTATUS,SE.VALUE MATE_EDU,U.MATE_EDU MATE_EDUS,SMB.VALUE MATE_BMONEY,U.MATE_BMONEY MATE_BMONEYS,")
 		.append("       SME.VALUE MATE_EMONEY,U.MATE_EMONEY MATE_EMONEYS,U.MATE_CHILD MATE_CHILD,U.MATE_BHEIGHT MATE_BHEIGHT,U.MATE_EHEIGHT MATE_EHEIGHT,U.USERPHOTO USERPHOTO")
 		.append("  FROM USERINFO U,SYSCODE SE,SYSCODE SMB,SYSCODE SME")
@@ -412,7 +412,7 @@ public class UserInfoDaoImpl  extends JdbcDaoSupport implements UserInfoDao {
 		.append("       U.HOUSEWORK HOUSEWORK,U.MARRYDATE MARRYDATE,U.PARENT PARENT,U.OTHERPARENT OTHERPARENT,U.DATING DATING,")
 		.append("       MS.VALUE MATE_SEX,U.MATE_BAGE MATE_BAGE,U.MATE_EAGE MATE_EAGE,U.MATE_BHEIGHT MATE_BHEIGHT,U.MATE_EHEIGHT MATE_EHEIGHT,")
 		.append("       ME.VALUE MATE_EDU,MBB.VALUE MATE_BMONEY,MBE.VALUE MATE_EMONEY,MM.VALUE MATE_MARRYSTATUS,MA.VALUE MATE_AREA,")
-		.append("       U.MATE_CHILD MATE_CHILD,U.USERPHOTO USERPHOTO,S.VALUE SEX,U.HOUSE HOUSE")
+		.append("       U.MATE_CHILD MATE_CHILD,U.USERPHOTO USERPHOTO,S.VALUE SEX,U.HOUSE HOUSE,U.PHOTOS PHOTOS")
 		.append("  FROM USERINFO U,SYSCODE S,SYSCODE E,SYSCODE M,SYSCODE N,SYSCODE MS,SYSCODE ME,SYSCODE MM,SYSCODE B,SYSCODE F,SYSCODE MA,SYSCODE A,SYSCODE MBB,SYSCODE MBE,SYSCODE SM,SYSCODE SC")
 		.append(" WHERE U.ID = ?")
 		.append("   AND S.NAME=?")//求性别
@@ -532,6 +532,7 @@ public class UserInfoDaoImpl  extends JdbcDaoSupport implements UserInfoDao {
 		Object marrystatus = dto.get("marrystatus");
 		Object bheight = dto.get("bheight");
 		Object eheight = dto.get("eheight");
+		Object area = dto.get("area");
 		     
 		StringBuilder sql = new StringBuilder()
 		.append("SELECT U.ID ID,U.NIKENAME NIKENAME,U.BIRTHDAY BIRTHDAY,SA.VALUE AREA,U.HEIGHT HEIGHT,U.MONEY MONEY,U.USERINNER USERINNER,U.USERPHOTO USERPHOTO")
@@ -567,6 +568,10 @@ public class UserInfoDaoImpl  extends JdbcDaoSupport implements UserInfoDao {
 			sql.append(" AND U.HEIGHT <= ?");
 			args.add(eheight);
 		}
+		if(area != null && !area.equals("") && !area.equals("0")){
+			sql.append(" AND U.AREA = ?");
+			args.add(area);
+		}
 		sql.append(" ORDER BY U.ID");
 		return this.getJdbcTemplate().queryForList(sql.toString(), args.toArray());
 	}
@@ -590,13 +595,39 @@ public class UserInfoDaoImpl  extends JdbcDaoSupport implements UserInfoDao {
 	public Map queryUserPhoto() throws Exception {
 		 
 		StringBuilder sql = new StringBuilder()
-		.append("SELECT USERPHOTO")
+		.append("SELECT USERPHOTO,PHOTOS")
 		.append("  FROM USERINFO")
 		.append(" WHERE ID = ?")
 		;
 		
 		Object args = this.dto.get("id");
 		return this.queryForMapAss(sql.toString(), args);
+	}
+
+	@Override
+	public boolean uploadImg() throws Exception {
+		String sql = "SELECT PHOTOS FROM USERINFO WHERE ID = ?";
+		Object arg = this.dto.get("id");
+		Map photos = this.queryForMapAss(sql, arg);
+		String photoStr = (String) photos.get("PHOTOS");
+		String uploadImg;
+		if(photoStr != null && !"".equals(photoStr)){
+			uploadImg = photoStr+";"+this.dto.get("userphoto");
+		} else{
+			uploadImg = ";"+this.dto.get("userphoto");
+		}
+		System.out.println(uploadImg);
+		StringBuilder sql2 = new StringBuilder()
+		.append("UPDATE USERINFO")
+		.append("   SET PHOTOS = ?")
+		.append(" WHERE ID = ?")
+		;
+		Object args[] = {
+				uploadImg,
+				this.dto.get("id")
+		};
+		return this.getJdbcTemplate().update(sql2.toString(), args) >0;
+//		return false;
 	}
 
 }

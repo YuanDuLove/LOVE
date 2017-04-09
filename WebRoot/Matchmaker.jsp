@@ -19,7 +19,7 @@ a{
 	text-decoration:none;
 }
 body{
-	background-image: url("resources/images/bg.jpg");
+	background:#F78E9D;
 }
 </style>
 <script type="text/javascript">
@@ -87,7 +87,10 @@ body{
 		window.location.href = "userdata/showRegInfoAction.action";
 	}
 	function showMsgInfo(){
-		window.location.href="error.jsp";
+		window.location.href="showMsgAction.action";
+	}
+	function pay(){
+		window.location.href="pay.jsp";
 	}
 </script>
 </head>
@@ -97,66 +100,65 @@ body{
 		<div style="width: 1350px;height: 80px">
 			<a href="homepage.jsp">
 				<div
-					style="margin-left:100px;background-image:url('resources/images/logo.png') ;width:91px;height: 80px;float: left;">
-				</div> 
-			</a>
-			<div style="font-size: 24px;line-height: 80px;width: 800px;height: 80px;float: left;">1亿 "会员" |
-				"实名婚恋网开创者"只有爱无需等待</div>
+					style="margin-left:100px;background-image:url('resources/images/logo.png') ;width:442px;height: 85px;float: left;">
+				</div> </a>
 			<!-- 
 			<div style="width: 195px;height: 80px;float: left;">
 				<img alt="" src="resources/images/top-bg.jpg">
 			</div>
 			 -->
 		</div>
-		<div style="width: 1350px;height: 60px;background-color: #703987;position:relative;">
-			<ul style="list-style: none;line-height: 60px;">
+		<div
+			style="width: 1350px;height: 40px;background-color: #D41E5B;position:relative;">
+			<ul style="list-style: none;line-height: 40px;">
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="homepage2.jsp"
-					style="color: white;text-decoration:none">主页</a></li>
+					style="color: white;text-decoration:none;"><img
+					alt="" src="resources/images/homeoff.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="showMainAction.action"
-					style="color: white;text-decoration:none">缘都空间</a></li>
+					style="color: white;text-decoration:none"><img
+					alt="" src="resources/images/zone.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="showQueryAction.action" style="color: white;">搜索</a></li>
+					href="showQueryAction.action" style="color: white;"><img
+					alt="" src="resources/images/search.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="Matchmaker.jsp" style="color: white;">红娘服务</a></li>
+					href="Matchmaker.jsp" style="color: white;"><img
+					alt="" src="resources/images/matchoff.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="Membership.jsp" style="color: white;">会员</a></li>
+					href="Membership.jsp" style="color: white;"><img
+					alt="" src="resources/images/vip.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="MyJsp.jsp" style="color: white;">关于我们</a></li>
+					href="MyJsp.jsp" style="color: white;"><img
+					alt="" src="resources/images/about.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="callme.jsp" style="color: white;">联系我们</a></li>
+					href="callme.jsp" style="color: white;"><img
+					alt="" src="resources/images/call.png" style="line-height: 40px;height: 40px"></a></li>
 	
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/order.png" style="line-height: 60px"
+					alt="" src="resources/images/order.png" style="line-height: 40px;height: 40px"
 					onclick="showMsgInfo()"></li>
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/msgicon.png" style="line-height: 60px"
+					alt="" src="resources/images/msgicon.png" style="line-height: 40px;height: 40px"
 					onclick="showMsgInfo()"></li>
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/mem.png" style="line-height: 60px"
+					alt="" src="resources/images/mem.png" style="line-height: 40px;height: 40px"
 					onclick="showMemInfo()"></li>
 			</ul>
-			
 		</div>
 		<div
-			style="background-color: red;width: 1000px;height: 40px;margin: 0 auto;text-align: center;">
-			<p style="padding-top: 10px">我们承诺：每一位珍爱通会员均已通过实名认证</p>
-		</div>
-		<div class="Memberservice">
-			<div class="za_hy_01" style="cursor: pointer;"
-				onclick="sumitPaymentOrder(1,290);return false;"></div>
-			<div class="gr_no_Box"></div>
+			style="background-color: red;width: 1350px;height: 570px;margin: 0 auto;background: url('resources/images/bgimg9.png');">
+		
 		</div>
 		<!-- 红娘一对一服务页面样式div -->
 		<div class="frame_960">

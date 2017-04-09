@@ -95,7 +95,7 @@
 		window.location.href = "showRegInfoAction.action";
 	}
 	function showMsgInfo(){
-		window.location.href="../error.jsp";
+		window.location.href="../showMsgAction.action";
 	}
 	function check(){
 		var personality = document.getElementById("personality").value;
@@ -174,8 +174,10 @@
 							<%
 								Map userinfo = (Map)session.getAttribute("userinfo");
 								String nickname = (String)userinfo.get("NIKENAME");
+							 	String userid = (String)userinfo.get("ID");
 							 %>
-							 <%=nickname %>
+							 <!-- <%=nickname %> -->
+							 爱相随-<%=userid %>
 						</a>
 					</div>
 					<div>权限</div>
@@ -303,7 +305,7 @@
 	               	 <div class="textareaBox textareaBox2">
 	                    <p class="tip">描述一下您的职业？<span>可举例生活中的事，引用朋友的评价或您认可的心理测试结果</span></p>
 	                    <div class="textareaBox-in">
-	                        <s:textarea id="introducecontent4" cols="75" rows="6" name="personality" cssStyle="font-size:18px;" id="personality"/>
+	                        <s:textarea cols="75" rows="6" name="personality" cssStyle="font-size:18px;" id="personality"/>
 	                        <p class="tip">限200字以内
 	                        
 	                    </div>

@@ -16,7 +16,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link rel="stylesheet" type="text/css"
 	href="./resources/css/memberinfocss.css">
-	<script type="text/javascript" src="resources/js/jquery-1.9.1.min.js"></script>
+<style type="text/css">
+.userphoto {
+	width: 100px;
+	height: 100px;
+}
+</style>
+<script type="text/javascript" src="resources/js/jquery-1.9.1.min.js"></script>
 <!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>-->
 <script type="text/javascript" src="resources/js/snow.js"></script>
 <script type="text/javascript">
@@ -36,11 +42,11 @@
 		window.location.href = "userdata/showRegInfoAction.action";
 	}
 	function showMsgInfo(){
-		window.location.href="error.jsp";
+		window.location.href="showMsgAction.action";
 	}
 	
 	function email(hid){
-		window.location.href = "showRegInfoAction.action";
+		//window.location.href = "showRegInfoAction.action";
 	}
 	function date(hid){	
 		var xmlHttp = false;
@@ -86,7 +92,6 @@
 		xmlHttp.onreadystatechange = function(){
 			if(xmlHttp.readyState == 4){
 				//成功
-				//alert("约会消息已发送成功");
 				var greet = document.getElementById("greet");
 				greet.disabled=true;
 				greet.style.background = "#cdcdcd";
@@ -99,6 +104,70 @@
 	}
 	function match(){
 		window.location.href = "showRegInfoAction.action";
+	}
+	function ogle(hid){
+		var xmlHttp = false;
+		if(window.XMLHttpRequest){
+			xmlHttp = new XMLHttpRequest();
+		} else if(window.ActiveXObject){
+			try{
+				xmlHttp = new ActiveXobject("Msxml2.XMLHTTP");
+			}catch(e){
+				try{
+					xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+				}catch(e){
+					window.alert("该浏览器不支持AJAX");
+				}
+			}
+		}
+		xmlHttp.open("POST","addOgleMsgAction.action?id="+hid,true);
+		xmlHttp.onreadystatechange = function(){
+			if(xmlHttp.readyState == 4){
+				//成功
+				alert("秋波发送成功");
+			}
+		}
+		xmlHttp.send();
+	}
+	
+	function dianzan(hid){
+		var xmlHttp = false;
+		if(window.XMLHttpRequest){
+			xmlHttp = new XMLHttpRequest();
+		} else if(window.ActiveXObject){
+			try{
+				xmlHttp = new ActiveXobject("Msxml2.XMLHTTP");
+			}catch(e){
+				try{
+					xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+				}catch(e){
+					window.alert("该浏览器不支持AJAX");
+				}
+			}
+		}
+		xmlHttp.open("POST","addZanMsgAction.action?id="+hid,true);
+		xmlHttp.onreadystatechange = function(){
+			if(xmlHttp.readyState == 4){
+				//成功
+				alert("点赞成功");
+				var zan = document.getElementById("zan");
+				zan.src = "resources/images/zan2.png";
+				zan.onclick = function(){
+					return false;
+				};
+			}
+		}
+		xmlHttp.send();
+	}
+	
+	function pay(){
+		window.location.href="pay.jsp";
+	}
+	
+	function showBigImg(imgStr){
+		
+		document.getElementById("bigImgDiv").style.display = "block";
+		document.getElementById("bigImg").src = "<%=request.getContextPath()%>/images/"+imgStr;
 	}
 	
 </script>
@@ -113,57 +182,64 @@
 		<div style="width: 1350px;height: 80px">
 			<a href="homepage.jsp">
 				<div
-					style="margin-left:100px;background-image:url('resources/images/logo.png') ;width:91px;height: 80px;float: left;">
+					style="margin-left:100px;background-image:url('resources/images/logo.png') ;width:442px;height: 85px;float: left;">
 				</div> 
 			</a>
-			<div style="font-size: 24px;line-height: 80px;width: 800px;height: 80px;float: left;">1亿 "会员" |
-				"实名婚恋网开创者"只有爱无需等待</div>
 			<!-- 
 			<div style="width: 195px;height: 80px;float: left;">
 				<img alt="" src="resources/images/top-bg.jpg">
 			</div>
 			 -->
 		</div>
-		<div style="width: 1350px;height: 60px;background-color: #703987;position:relative;">
-			<ul style="list-style: none;line-height: 60px;">
+		<div
+			style="width: 1350px;height: 40px;background-color: #D41E5B;position:relative;">
+			<ul style="list-style: none;line-height: 40px;">
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="homepage2.jsp"
-					style="color: white;text-decoration:none">主页</a></li>
+					style="color: white;text-decoration:none;"><img
+					alt="" src="resources/images/home2.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="showMainAction.action"
-					style="color: white;text-decoration:none">缘都空间</a></li>
+					style="color: white;text-decoration:none"><img
+					alt="" src="resources/images/zone.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="showQueryAction.action" style="color: white;">搜索</a></li>
+					href="showQueryAction.action" style="color: white;"><img
+					alt="" src="resources/images/search.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="Matchmaker.jsp" style="color: white;">红娘服务</a></li>
+					href="Matchmaker.jsp" style="color: white;"><img
+					alt="" src="resources/images/match.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="Membership.jsp" style="color: white;">会员</a></li>
+					href="Membership.jsp" style="color: white;"><img
+					alt="" src="resources/images/vip.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="MyJsp.jsp" style="color: white;">关于我们</a></li>
+					href="MyJsp.jsp" style="color: white;"><img
+					alt="" src="resources/images/about.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="callme.jsp" style="color: white;">联系我们</a></li>
+					href="callme.jsp" style="color: white;"><img
+					alt="" src="resources/images/call.png" style="line-height: 40px;height: 40px"></a></li>
 	
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/order.png" style="line-height: 60px"
+					alt="" src="resources/images/order.png" style="line-height: 40px;height: 40px"
 					onclick="showMsgInfo()"></li>
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/msgicon.png" style="line-height: 60px"
+					alt="" src="resources/images/msgicon.png" style="line-height: 40px;height: 40px"
 					onclick="showMsgInfo()"></li>
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/mem.png" style="line-height: 60px"
+					alt="" src="resources/images/mem.png" style="line-height: 40px;height: 40px"
 					onclick="showMemInfo()"></li>
 			</ul>
-			
+
+	
 		</div>
 		<div class="memBackgroud"></div>
 		<div class="memberInfoDiv">
@@ -177,8 +253,19 @@
 							<a class="nicknameA">
 								<s:label name="nickname"/>
 							</a>
+							<%
+								if(1 == 1){
+							%>
+									<img src="resources/images/hg.png" width="20px" height="20px">
+							<%
+								}
+							 %>
+							 
 						</div>
-						<div></div>
+						<div style="color: #1E90FF;font-family: 黑体;font-size: 16px;">
+							魅力值<s:property value="count"/>
+							<img id="zan" src="resources/images/zan1.png" width="20px" height="20px" onclick="dianzan(<%=hid%>)">
+						</div>
 					</div>
 					<hr>
 					<div class="memInfoTestList">
@@ -234,7 +321,29 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: 20px;background-color:  #f7d9a5">
+			<div style="margin-top: 20px;">
+				<s:if test="photos.size()!=0">
+					<div style="width: 1080px;margin: 0 auto;background: white;border: 1px solid black;">
+						<div style="font-family: 黑体;font-size: 18px;color: black;margin-right: 10px;margin-top: 10px;">
+							照片展示
+						</div>
+						<div style="margin-left: 10px;margin-top: 10px;border: 1px solid black;background: aqua;height: 100px;width: 600px;">
+							
+								<s:iterator value="photos" status="st">
+									<div style="width: 100px;text-align: center;margin-right: 10px;float: left;" onclick="showBigImg('<s:property value="PHOTOS"/>')">
+										<img class="userphoto" name="userImg" alt=""
+											src="<%=request.getContextPath()%>/images/<s:property value="PHOTOS"/>"
+											>
+									</div>
+								</s:iterator>
+							
+						</div>
+						
+						<div id="bigImgDiv" style="margin-left: 10px;margin-top: 10px;border: 1px solid black;background: aqua;height: 400px;width: 400px;display: none;">
+							<img width="400px" height="400px" alt="" src="" id="bigImg">
+						</div>
+					</div>
+				</s:if>
 				<div class="memPersonInner">
 					<div
 						style="width: 100%;height: 30px;color: #F4A460;font-size: 20px;padding-top: 10px;padding-left:10px;">
@@ -463,7 +572,7 @@
 			style=" width:50px; height: 250px; border: 1px solid #D4CD49; position:fixed;right:0 ;top:40%">
 			<div class="floatDiv"
 				style="background-image: url('resources/images/ogle.jpg');"
-				onmouseover="hiddendiv()" onclick="暗送秋波"></div>
+				onmouseover="hiddendiv()" onclick="ogle(<%=hid%>)"></div>
 			<div class="floatDiv"
 				style="background-image: url('resources/images/gift.jpg');"
 				onmouseover="showgift()"></div>
@@ -522,7 +631,7 @@
 	
 				<div
 					style="width: 150px;height: 50px;padding-left:75px;margin-top:20px;">
-					<a href="#" style="display:block;width: 150px;height: 40px;">
+					<a href="#" style="display:block;width: 150px;height: 40px;" onclick="pay()">
 						<div
 							style="width: 143px;height: 40px;background-image: url('resources/images/open.jpg');">
 						</div> </a>

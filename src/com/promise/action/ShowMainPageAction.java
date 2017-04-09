@@ -16,13 +16,21 @@ public class ShowMainPageAction {
 	public String execute() throws Exception {
 		Map dto = new HashMap();
 		Map userinfo1 = (Map) ActionContext.getContext().getSession().get("userinfo");
-		System.out.println("userinfo1======="+userinfo1);
 		String userid = (String) userinfo1.get("ID");
-		System.out.println("userid======="+userid);
 		dto.put("id", userid);
 		service.setMapDto(dto);
 		msg = service.queryMainPageInfo();
 		System.out.println("msg==============="+msg);
+		userNikeName = (String) msg.get("NIKENAME");
+		
+		//查询未读消息
+		Map unReadMsgMap = service.queryUnReadMsg();
+		unReadMsg = (String) unReadMsgMap.get("COUNT");
+		System.out.println("unReadMsg==========="+unReadMsg);
+		
+		//查询未读通知
+		Map unReadNoticeMap = service.queryUnReadNotice();
+		unReadNotice = (String) unReadNoticeMap.get("COUNT");
 
 		//查询择偶条件
 		area_mate = "潍坊";
@@ -86,6 +94,9 @@ public class ShowMainPageAction {
 		Map infoMap;
 		if(userinfo.size() > 0){
 			for(int i = 0;i < userinfo.size();i++){
+				if(i >= 6){
+					break;
+				}
 				infoMap = new HashMap();
 				infoMap = (Map) userinfo.get(i);
 				Date birthday = (Date) infoMap.get("BIRTHDAY");
@@ -121,6 +132,38 @@ public class ShowMainPageAction {
 	private String id = null;
 	private String userphotoStr = null;
 	private List infos;
+	private String unReadMsg = null;
+	private String unReadNotice = null;
+	private String userNikeName = null;
+	
+	
+	public String getUserNikeName() {
+		return userNikeName;
+	}
+
+	public void setUserNikeName(String userNikeName) {
+		this.userNikeName = userNikeName;
+	}
+
+	public String getUnReadNotice() {
+		return unReadNotice;
+	}
+
+	public void setUnReadNotice(String unReadNotice) {
+		this.unReadNotice = unReadNotice;
+	}
+
+	public String getUnReadMsg() {
+		return unReadMsg;
+	}
+
+	public void setUnReadMsg(String unReadMsg) {
+		this.unReadMsg = unReadMsg;
+	}
+
+	public void setMsg(Map msg) {
+		this.msg = msg;
+	}
 
 	public List getInfos() {
 		return infos;
