@@ -61,6 +61,9 @@
 		}
 		
 	}
+	function ptfw(){
+		window.location.href="ptfw.jsp";
+	}
 	
 /*	
 "use strict";
@@ -414,6 +417,9 @@
 					style="margin-left:100px;background-image:url('resources/images/logo.png') ;width:442px;height: 85px;float: left;">
 				</div>
 			</a>
+			<div
+				style="font-size: 24px;line-height: 140px;width: 400px;height: 80px;float: right;">
+				咨询电话 | 0536-7336933</div>
 		</div>
 		<div
 			style="width: 1350px;height: 40px;background-color: #D41E5B;position:relative;">
@@ -422,7 +428,7 @@
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="homepage2.jsp"
 					style="color: white;text-decoration:none;"><img
-					alt="" src="resources/images/home.png" style="line-height: 40px;height: 40px"></a></li>
+					alt="" src="resources/images/index.gif" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="showMainAction.action"
@@ -535,7 +541,7 @@
 				<font style="font-family: 宋体;font-family: 18px;">未来漫长的日子，有你在身边</font>
 			</div>
 			<div style="width: 1052px;height: 302px;margin: 0 auto">
-				<div style="width: 263px;height:302px;text-align: center;float: left;">
+				<div style="width: 263px;height:302px;text-align: center;float: left;" onclick="ptfw()">
 					<img alt="" src="resources/images/success1.jpg">
 				</div>
 				<div style="width: 263px;height:302px;text-align: center;float: left;">
@@ -556,7 +562,7 @@
 				<font style="font-family: 宋体;font-size: 28px;color: black;">配套服务</font><br><br>
 				<font style="font-family: 宋体;font-family: 22px;color: black;">在缘都，你可以享受到的服务有哪些？</font>
 			</div>
-			<div style="width: 100%;height: 300px;">
+			<div style="width: 100%;height: 300px;"onclick="ptfw()">
 				<img alt="" src="resources/images/wedding.jpg">
 				<img alt="" src="resources/images/hotel.jpg">
 				<img alt="" src="resources/images/travel.jpg">

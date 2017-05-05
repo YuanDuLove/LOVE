@@ -157,7 +157,7 @@
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="../callme.jsp" style="color: white;"><img
-					alt="" src="../resources/images/calloff.png" style="line-height: 40px;height: 40px"></a></li>
+					alt="" src="../resources/images/call.png" style="line-height: 40px;height: 40px"></a></li>
 	
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
@@ -169,17 +169,17 @@
 					onclick="showMsgInfo()"></li>
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="../resources/images/mem.png" style="line-height: 40px;height: 40px"
+					alt="" src="../resources/images/mem.gif" style="line-height: 40px;height: 40px"
 					onclick="showMemInfo()"></li>
 			</ul>
 		</div>
 		<!-- 用户信息主体div -->
-		<div style="margin-top: 50px;width: 1250px;">
+		<div style="margin-top: 50px;width: 1250px">
 			<!-- 主要资料div -->
 			<div class="regMainInfoDiv">
 				<div
-					style="width: 100%;height: 150px;background-color: green;text-align: center;">
-					<div style="width: 100%;height: 80px;background-color: orange;line-height: 80px;">
+					style="width: 100%;height: 150px;text-align: center;">
+					<div style="width: 100%;height: 80px;line-height: 80px;">
 						<a href="#" style="text-decoration: none;">
 							<%
 								Map userinfo = (Map)session.getAttribute("userinfo");
@@ -194,7 +194,7 @@
 				</div>
 				<hr>
 				<div
-					style="width: 100%;height: 60px;background-color: pink;text-align: center;">
+					style="width: 100%;height: 60px;text-align: center;">
 					诚信值</div>
 				<hr>
 				<!-- 资料列表div start -->

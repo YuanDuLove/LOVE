@@ -44,7 +44,7 @@ h1{
 	
 }
 .homeMemberDiv{/*会员展示框*/
-		height:500px; 
+		height:400px; 
 		width: 1350px;
 		text-align: center;
 }
@@ -109,7 +109,7 @@ a:HOVER {
 }
 .Step{
 	width: 700px;
-    height:350px;
+    height:850px;
     border: 1px solid #cccccc;
     background: white;
 }
@@ -127,7 +127,7 @@ a:HOVER {
 .EnjoyService{
 	float:left;
     width: 700px;
-    height:1000px;
+    height:500px;
 }
 .HowToUpgrade{
 	width: 1000px;
@@ -152,7 +152,7 @@ a:HOVER {
 	font-size: 14px;
 	border: 1px solid #cdcdcd;
 	float: left;
-	color: #ABABAB;
+	color: red;
 	cursor: pointer;
 	background-image: url('../images/hongniang_white.png');
 }

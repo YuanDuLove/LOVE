@@ -115,54 +115,63 @@
 	<div style="width: 1350px;height: 80px">
 			<a href="../homepage.jsp">
 				<div
-					style="margin-left:100px;background-image:url('../resources/images/logo.png') ;width:91px;height: 80px;float: left;">
+					style="margin-left:100px;background-image:url('../resources/images/logo.png') ;width:442px;height: 79px;float: left;">
 				</div> 
 			</a>
-			<div style="font-size: 24px;line-height: 80px;width: 800px;height: 80px;float: left;">1亿 "会员" |
-				"实名婚恋网开创者"只有爱无需等待</div>
+			<div
+				style="font-size: 24px;line-height: 80px;width: 300px;height: 80px;float: right;">
+				咨询电话 | 0536-7336933</div>
 			<!-- 
 			<div style="width: 195px;height: 80px;float: left;">
 				<img alt="" src="resources/images/top-bg.jpg">
 			</div>
 			 -->
 		</div>
-		<div style="width: 1350px;height: 60px;background-color: #703987;position:relative;">
-			<ul style="list-style: none;line-height: 60px;">
+		<div
+			style="width: 1350px;height: 40px;background-color: #D41E5B;position:relative;">
+			<ul style="list-style: none;line-height: 40px;">
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="../homepage2.jsp"
-					style="color: white;text-decoration:none">主页</a></li>
+					style="color: white;text-decoration:none;"><img
+					alt="" src="../resources/images/homeoff.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="../showMainAction.action"
-					style="color: white;text-decoration:none">缘都空间</a></li>
+					style="color: white;text-decoration:none"><img
+					alt="" src="../resources/images/zone.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="../showQueryAction.action" style="color: white;">搜索</a></li>
+					href="../showQueryAction.action" style="color: white;"><img
+					alt="" src="../resources/images/search.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="../Matchmaker.jsp" style="color: white;">红娘服务</a></li>
+					href="../Matchmaker.jsp" style="color: white;"><img
+					alt="" src="../resources/images/match.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="../Membership.jsp" style="color: white;">会员</a></li>
+					href="../Membership.jsp" style="color: white;"><img
+					alt="" src="../resources/images/vip.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="../MyJsp.jsp" style="color: white;">关于我们</a></li>
+					href="../MyJsp.jsp" style="color: white;"><img
+					alt="" src="../resources/images/about.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="../callme.jsp" style="color: white;">联系我们</a></li>
+					href="../callme.jsp" style="color: white;"><img
+					alt="" src="../resources/images/calloff.png" style="line-height: 40px;height: 40px"></a></li>
 	
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="../resources/images/order.png" style="line-height: 60px"
+					alt="" src="../resources/images/order.png" style="line-height: 40px;height: 40px"
 					onclick="showMsgInfo()"></li>
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="../resources/images/msgicon.png" style="line-height: 60px"
+					alt="" src="../resources/images/msgicon.png" style="line-height: 40px;height: 40px"
 					onclick="showMsgInfo()"></li>
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="../resources/images/mem.png" style="line-height: 60px"
+					alt="" src="../resources/images/mem.png" style="line-height: 40px;height: 40px"
 					onclick="showMemInfo()"></li>
 			</ul>
 		</div>

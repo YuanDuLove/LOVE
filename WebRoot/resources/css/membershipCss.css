@@ -49,6 +49,14 @@ td{
 	height: 40px;
 	font-family: 黑体;
 }
+.btn{
+	background: #a938de;
+	border: 1px solid #eee;
+	border-radius: 15px;
+	position:relative;	/*设置相对定位*/
+	left:240px;
+	outline: 0;/*button点击去除边框*/
+}
 table{
 	width:100%;
 	border:dotted #ff95a3; 

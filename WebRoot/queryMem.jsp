@@ -82,7 +82,7 @@ body {
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="showQueryAction.action" style="color: white;"><img
-					alt="" src="resources/images/searchoff.png" style="line-height: 40px;height: 40px"></a></li>
+					alt="" src="resources/images/searchoff.gif" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="Matchmaker.jsp" style="color: white;"><img

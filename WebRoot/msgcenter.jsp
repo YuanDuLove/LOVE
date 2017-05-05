@@ -149,7 +149,7 @@ body {
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="MyJsp.jsp" style="color: white;"><img
-					alt="" src="resources/images/about2.png" style="line-height: 40px;height: 40px"></a></li>
+					alt="" src="resources/images/about.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="callme.jsp" style="color: white;"><img
@@ -157,7 +157,7 @@ body {
 	
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/order.png" style="line-height: 40px;height: 40px"
+					alt="" src="resources/images/msg.gif" style="line-height: 40px;height: 40px"
 					onclick="showMsgInfo()"></li>
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
@@ -217,7 +217,7 @@ body {
 			</div>
 			
 			<div style="float: left;width: 27%;height: 800px;margin-left: 3%;margin-top: 50px;">
-				<img width="100%" alt="" src="resources/images/ad_test.png">
+				<img width="100%" alt="" src="resources/images/ad_test.jpg">
 			</div>
 			
 		</div>

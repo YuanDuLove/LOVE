@@ -128,7 +128,7 @@ body{
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="Matchmaker.jsp" style="color: white;"><img
-					alt="" src="resources/images/matchoff.png" style="line-height: 40px;height: 40px"></a></li>
+					alt="" src="resources/images/matchoff.gif" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="Membership.jsp" style="color: white;"><img
@@ -164,8 +164,7 @@ body{
 		<div class="frame_960">
 			<div style="float: left;">
 				<div class="Cherish">
-					<font style="color: #FF4040;font-size: 22px;">VIP 尊享特权</font>
-					<font style="font-size: 14px;">排名靠前 沟通自由无限</font>
+					<font style="font-size: 22px;">缘都婚恋红娘服务与其他婚介服务的区别</font>
 				</div>
 				<div class="Step">
 					<div style="width: 100%;height: 40px;">
@@ -178,8 +177,8 @@ body{
 									<img alt="" src="resources/images/privilege14.jpg">
 								</div>
 								<div style="float: left;width:500px;height: 80px;margin-left: 30px;margin-top:10px;border: 1px solid #cdcdcd;border-radius:3px;">
-									<font style="font-family:黑体;color: #FF4040;font-size: 22px;">恋爱保障</font><font style="font-family:黑体;color: #FF4040;font-size: 14px;">(未成功恋爱)</font><br>
-									<font style="font-family:黑体;font-size: 16px;">我们承诺，免费延长红娘服务期1个月。 为您解忧，无需担心错过遇见对的Ta而烦恼。</font>
+									<font style="font-family:黑体;color: #FF4040;font-size: 22px;">征婚方式</font><br>
+									<font style="font-family:黑体;font-size: 16px;">缘都婚恋所有红娘均经过系统的培训，从事红娘行业多年，经验丰富。可以为您提供一对一的私人订制服务。</font>
 								</div>
 							</div>
 							<div style="width:100%;height: 100px;margin-top: 30px;">
@@ -187,8 +186,44 @@ body{
 									<img alt="" src="resources/images/privilege15.jpg">
 								</div>
 								<div style="float: left;width:500px;height: 80px;margin-left: 30px;margin-top:10px;border: 1px solid #cdcdcd;border-radius:3px;">
-									<font style="font-family:黑体;color: #FF4040;font-size: 22px;">结婚保障</font><font style="font-family:黑体;color: #FF4040;font-size: 14px;">(成功恋爱)</font><br>
-									<font style="font-family:黑体;font-size: 16px;">额外赠送，每月1次（一年内）的专业婚恋咨询服务。为您分析婚恋情感难题、家庭人际关系调适和辅导。</font>
+									<font style="font-family:黑体;color: #FF4040;font-size: 22px;">婚恋/心理咨询</font><br>
+									<font style="font-family:黑体;font-size: 16px;">缘都婚恋拥有专业的婚恋专家及心理专家为您提供婚恋指导及心理咨询服务。</font>
+								</div>
+							</div>
+							<div style="width: 100%;height: 100px;margin-top: 30px;">
+								<div style="float: left;width: 105px;height: 100px;margin-left: 20px;">
+									<img alt="" src="resources/images/privilege14.jpg">
+								</div>
+								<div style="float: left;width:500px;height: 80px;margin-left: 30px;margin-top:10px;border: 1px solid #cdcdcd;border-radius:3px;">
+									<font style="font-family:黑体;color: #FF4040;font-size: 22px;">会员安全性</font><br>
+									<font style="font-family:黑体;font-size: 16px;">缘都婚恋所有注册会员均经过身份认证，及婚姻状态、学历、收入等多维度认证，使会员恋爱交友安全无忧。</font>
+								</div>
+							</div>
+							<div style="width: 100%;height: 100px;margin-top: 30px;">
+								<div style="float: left;width: 105px;height: 100px;margin-left: 20px;">
+									<img alt="" src="resources/images/privilege14.jpg">
+								</div>
+								<div style="float: left;width:500px;height: 80px;margin-left: 30px;margin-top:10px;border: 1px solid #cdcdcd;border-radius:3px;">
+									<font style="font-family:黑体;color: #FF4040;font-size: 22px;">隐私保障</font><br>
+									<font style="font-family:黑体;font-size: 16px;">会员信息严格保密，未经本人允许绝不外泄。</font>
+								</div>
+							</div>
+							<div style="width: 100%;height: 100px;margin-top: 30px;">
+								<div style="float: left;width: 105px;height: 100px;margin-left: 20px;">
+									<img alt="" src="resources/images/privilege14.jpg">
+								</div>
+								<div style="float: left;width:500px;height: 80px;margin-left: 30px;margin-top:10px;border: 1px solid #cdcdcd;border-radius:3px;">
+									<font style="font-family:黑体;color: #FF4040;font-size: 22px;">线下活动</font><br>
+									<font style="font-family:黑体;font-size: 16px;">缘都婚恋平台定期组织多种线下交友活动、高端派对、企业联谊等活动，帮助会员尽快找到属于自己的另一半。</font>
+								</div>
+							</div>
+							<div style="width: 100%;height: 100px;margin-top: 30px;">
+								<div style="float: left;width: 105px;height: 100px;margin-left: 20px;">
+									<img alt="" src="resources/images/privilege14.jpg">
+								</div>
+								<div style="float: left;width:500px;height: 80px;margin-left: 30px;margin-top:10px;border: 1px solid #cdcdcd;border-radius:3px;">
+									<font style="font-family:黑体;color: #FF4040;font-size: 22px;">高服务质量</font><br>
+									<font style="font-family:黑体;font-size: 16px;">在服务过程中，您对我们的工作有任何的不满，即可拨打vip服务监察客服电话进行投诉，我们会对您的反映进行核实并及时处理，同时，服务监察也会定期针对用户的满意度主动进行电话回访。</font>
 								</div>
 							</div>
 						</div>
@@ -205,7 +240,7 @@ body{
 			</div>
 			<div style="float: left;">
 				<div class="Truelove">
-					<font style="color: #FF4040;font-size: 22px;">珍爱通，尊享服务</font>
+					<font style="color: #FF4040;font-size: 22px;">缘都红娘具服务有哪些特色</font>
 				</div>
 				<div class="Privilege">
 					<div
@@ -213,33 +248,33 @@ body{
 						<div id="no1" onmouseover="showRed1()"
 							class="HongniangServiceDivRed" style="margin-left:10px;">
 							<br>
-							<span style="font-size: 16px;">1</span> 专案<br> 为您解决征婚起步难
+							<span style="font-size: 16px;">1</span> <br>100%真实会员
 						</div>
 						<div id="no2" onmouseover="showRed2()"
 							class="HongniangServiceDivWhite">
 							<br>
-							<span style="font-size: 16px;">2</span>筛选<br> 为您解决合适对象难
+							<span style="font-size: 16px;">2</span><br> 红娘一对一服务
 						</div>
 						<div id="no3" onmouseover="showRed3()"
 							class="HongniangServiceDivWhite">
 							<br>
-							<span style="font-size: 16px;">3</span>牵线<br> 为您解决传情达意难
+							<span style="font-size: 16px;">3</span><br> 婚恋/心理咨询
 						</div>
 						<div id="no4" onmouseover="showRed4()"
 							class="HongniangServiceDivWhite">
 							<br>
-							<span style="font-size: 16px;">4</span>约见<br> 为您解决顺利约会难
+							<span style="font-size: 16px;">4</span><br> 个人形象设计
 						</div>
 						<div id="no5" onmouseover="showRed5()"
 							class="HongniangServiceDivWhite">
 							<br>
-							<span style="font-size: 16px;">5</span>撮合<br> 为您解决深入交往难
+							<span style="font-size: 16px;">5</span><br> 完善的监督体系
 						</div>
 					</div>
 					<div style="width: 100%;height:600px;">
 						<div id="first" style="display: block;">
 							<div style="width: 100%;height: 250px;">
-								<br>第一步 专案 为您解决征婚起步难<br><br>
+								<br>100%真实会员<br><br>
 								<div
 									style="width: 250px;height: 200px;margin-left:10px;float: left;">
 									<img alt="" src="resources/images/hn1.jpg">
@@ -247,10 +282,7 @@ body{
 								<div
 									style="width: 300px;height: 200px;margin-left:10px;float: left;">
 									<p>
-										<font style="font-family: 黑体;font-size: 16px;">深入解析状况</font><br>
-										<font style="font-family: 黑体;color: #AAAAAA;font-size: 14px;">深入了解您的现状及需求，为您提供专业建议。</font><br><br>
-										<font style="font-family: 黑体;font-size: 16px;">制作专属相亲档案</font><br>
-										<font style="font-family: 黑体;color: #AAAAAA;font-size: 14px;">为您制作专属的相亲档案，助您找到幸福情缘。</font></p>
+										<font style="font-family: 黑体;font-size: 16px;">所有会员均经过身份、婚姻、学历、收入、职业等多维度认证，保证会员信息绝对真实有效</font></p>
 								</div>
 							</div>
 							<hr style="border: 1px dashed #999999;">
@@ -270,7 +302,7 @@ body{
 						</div>
 						<div id="second" style="display: none;">
 							<div style="width: 100%;height: 250px;">
-								<br>第二步：筛选为您解决适合对象难<br><br>
+								<br>红娘一对一服务<br><br>
 								<div
 									style="width: 250px;height: 200px;margin-left:10px;float: left;">
 									<img alt="" src="resources/images/hn2.jpg">
@@ -278,10 +310,7 @@ body{
 								<div
 									style="width: 300px;height: 200px;margin-left:10px;float: left;">
 									<p>
-										<font style="font-family: 黑体;font-size: 16px;">1万高意向相亲会员</font><br>
-										<font style="font-family: 黑体;color: #AAAAAA;font-size: 14px;">会员数量多且相亲目的一致，能大大提高相亲效率。</font><br><br>
-										<font style="font-family: 黑体;font-size: 16px;">开辟沟通渠道为您寻找心仪对象</font><br>
-										<font style="font-family: 黑体;color: #AAAAAA;font-size: 14px;">通过专业经验开辟沟通渠道为您寻找心仪对象。</font></p>
+										<font style="font-family: 黑体;font-size: 16px;">所有红娘均经过系统化的培训，从事红娘行业多年，经验丰富。红娘会根据您的感情经理，择偶方向为您分配专属红娘</font></p>
 								</div>
 							</div>
 							<hr style="border: 1px dashed #999999;">
@@ -298,7 +327,7 @@ body{
 						</div>
 						<div id="third" style="display: none;">
 							<div style="width: 100%;height: 250px;">
-								<br>第三步：牵线为您解决传情达意难<br><br>
+								<br>婚恋/心理咨询<br><br>
 								<div
 									style="width: 250px;height: 200px;margin-left:10px;float: left;">
 									<img alt="" src="resources/images/hn3.jpg">
@@ -306,12 +335,7 @@ body{
 								<div
 									style="width: 300px;height: 200px;margin-left:10px;float: left;">
 									<p>
-										<font style="font-family: 黑体;font-size: 16px;">主动发掘传递优点</font><br>
-										<font style="font-family: 黑体;color: #AAAAAA;font-size: 14px;">主动发掘您的优点，并让对方获知您的独到之处。</font><br><br>
-										<font style="font-family: 黑体;font-size: 16px;">帮您了解对方状况</font><br>
-										<font style="font-family: 黑体;color: #AAAAAA;font-size: 14px;">帮助您了解对方的情况，使您的相亲更安心。</font><br><br>
-										<font style="font-family: 黑体;font-size: 16px;">传情达意</font><br>
-										<font style="font-family: 黑体;color: #AAAAAA;font-size: 14px;">恰当准确的将您的意向传递给对方，为您架起真爱的桥梁。</font>
+										<font style="font-family: 黑体;font-size: 16px;">缘都红娘会对您在感情生活中遇到的困扰给予疏导，可为您提供婚恋指导及心理咨询服务</font>
 									</p>
 								</div>
 							</div>
@@ -329,7 +353,7 @@ body{
 						</div>
 						<div id="forth" style="display: none;">
 							<div style="width: 100%;height: 250px;">
-								<br>第四步：约见为您解决顺利约会难<br><br>
+								<br>个人形象设计<br><br>
 								<div
 									style="width: 250px;height: 200px;margin-left:10px;float: left;">
 									<img alt="" src="resources/images/hn4.jpg">
@@ -337,10 +361,7 @@ body{
 								<div
 									style="width: 300px;height: 200px;margin-left:10px;float: left;">
 									<p>
-										<font style="font-family: 黑体;font-size: 16px;">主动约见对象</font><br>
-										<font style="font-family: 黑体;color: #AAAAAA;font-size: 14px;">帮您了解对方意向，适时代您约见并促成你们见面。</font><br><br>
-										<font style="font-family: 黑体;font-size: 16px;">制作专属相亲档案</font><br>
-										<font style="font-family: 黑体;color: #AAAAAA;font-size: 14px;">相亲约会指导</font></p>
+										<font style="font-family: 黑体;font-size: 16px;">专业的形象设计，为您提供形象设计，约会指导，帮助您更好的赢得异性的青睐。</font></p>
 								</div>
 							</div>
 							<hr style="border: 1px dashed #999999;">
@@ -357,7 +378,7 @@ body{
 						</div>
 						<div id="fifth" style="display: none;">
 							<div style="width: 100%;height: 250px;">
-								<br>第五步：撮合为您解决深入交往难<br><br>
+								<br>完善的监督体系<br><br>
 								<div
 									style="width: 250px;height: 200px;margin-left:10px;float: left;">
 									<img alt="" src="resources/images/hn5.jpg">
@@ -365,10 +386,7 @@ body{
 								<div
 									style="width: 300px;height: 200px;margin-left:10px;float: left;">
 									<p>
-										<font style="font-family: 黑体;font-size: 16px;">积极主动推进交往</font><br>
-										<font style="font-family: 黑体;color: #AAAAAA;font-size: 14px;">为您安排更多沟通和见面的机会，推动您的交往进程。</font><br><br>
-										<font style="font-family: 黑体;font-size: 16px;">全程保驾护航</font><br>
-										<font style="font-family: 黑体;color: #AAAAAA;font-size: 14px;">全程贴心关怀，积极调和您在过程中所遇到的困难。</font></p>
+										<font style="font-family: 黑体;font-size: 16px;">如果在红娘的工作过程中您有任何的不满，即可拨打服务监察客服电话进行反馈和投诉。</font></p>
 								</div>
 							</div>
 							<hr style="border: 1px dashed #999999;">
@@ -397,32 +415,17 @@ body{
 				<font style="color: #FF4040;font-size: 22px;">VIP 尊享服务</font><br>
 				<div style="width: 100%;height: 100%;margin-top: 10px; border: 1px solid #AAAAAA;background: white;">
 					<div style="margin-left: 20px;">
-						<font style="font-family: 黑体;font-size: 16px;">如何升级珍爱通</font><font style="font-size: 13px;color: #aaaaaa">你可以采用以下两种方式开通</font><br>
-						<img width="660px" alt="" src="resources/images/pic01.png">
 						<p>
-							<font style="font-family: 黑体;">为什么要购买珍爱通？</font><br><br>
-								<font style="font-family: 黑体;color: #404040;font-size: 14px;">在繁忙的现代社会，
-								每个人都意识到结束单身已成为迫在眉睫的事情。单身，不是您不够好，也不是<br>	没有优秀的异性，或许是您的圈子小，
-								或许是你们都在原地等待心仪的对方。缘都婚恋成立一年，数千的<br>注册会员，本着成就天下姻缘的理念来筑造您的那一份幸福。
-								珍爱通可以为您的姻缘提供更快捷更贴心<br>的服务，让您在缘都婚恋快速遇到心仪的那个人，在和异性的相识、相知、相见、
-								相恋过程中获得红娘<br>的专业婚恋指导。</font><br><br>
-							<font style="font-family: 黑体;">如何购买珍爱通？</font><br><br>
-								<font style="font-family: 黑体;color: #404040;font-size: 14px;">①在此声明：缘都婚恋所有的支付方式只在缘都婚恋官方网站www.yuandulove.com公布，其他方式均无效；<br>
-								②您可以点击“升级珍爱通”了解具体方式；<br>
-								③如您在支付过程中有疑惑，可以打客服热线0536-7667-933,咨询您的专线红娘。</font><br><br>
-							<font style="font-family: 黑体;">升级需要注意哪些事项？<br><br>
-								<font style="font-family: 黑体;color: #404040;font-size: 14px;">①为了您的支付安全，请您不要在网吧等公共场所的电脑上进行网上银行支付操作；<br>
-								②温馨提醒：如您通过银行柜台、ATM机等方式办理，请您保留好银行底单，以便我们查账，及时为您办理<br>升级服务。</font><br><br>
-							<font style="font-family: 黑体;">升级后能享受哪些待遇？</font><br><br>
-								<font style="font-family: 黑体;color: #404040;font-size: 14px;">①升级后，同步为您开通网站自助功能，您可以给心仪的异性发邮件等；<br>
-								②安排高级红娘一对一为您服务，根据您的自身情况和择偶要求，制定合适的相亲档案；<br>
-								③和您一起筛选适合的相亲对象，并在您和心仪对象的沟通、见面阶段，给您专业的婚恋指导、牵线搭桥；<br>帮你们传情达意，协助你们了解交往过程中的障碍，知晓交往过程中的误会，指导你们寻求步入婚恋状态<br>的路径；<br>
-								④征婚是个漫长且幸福的过程，您是主体，红娘全程协助您，请您及时把您的困惑告诉红娘，让红娘有机会<br>为你们的相识交往牵线搭桥，为你们的爱情保驾护航。</font><br><br>
-							<font style="font-family: 黑体;">淘宝上的“珍爱通”能在缘都婚恋上使用吗？</font><br><br>
-								<font style="font-family: 黑体;color: #404040;font-size: 14px;">近期在网上出现低价出售“珍爱通”的商家，此类商家是采用银行卡诈骗方式来为购买者升级“珍爱通”<br>的。现警方已对此类商家立案侦查。缘都婚恋在此提示每位会员，通过缘都婚恋官方网站购买“珍爱通”。<br>如您通过其他网站购买珍爱通，一经查出，您的珍爱通资格将被取消，所有损失由您本人承担，同时您还将<br>面临被追究刑事责任的风险。</font><br><br>
-							<font style="font-family: 黑体;">使用珍爱通服务，需要注意什么事项？</font><br><br>
-								<font style="font-family: 黑体;color: #404040;font-size: 14px;">①请您于升级珍爱通服务3日内验证您的有效证件；<br>
-								②由于技术条件限制，缘都婚恋目前还无法为会员提供境外（中国大陆以外地区）电话沟通服务。如果您在<br>境外，请使用“珍爱通”的邮件、名片等自助功能，并通过邮件与您的红娘保持联系。</font><br><br>
+							<font style="font-family: 黑体;">如何保证会员的信息真实有效?</font><br><br>
+								<font style="font-family: 黑体;color: #404040;font-size: 14px;">缘都婚恋注册信息经多重审核，用户携带身份证件前往实体店，人证一致方可认证通过。同时，服务顾问也会对会员进行婚姻状态、收入、学历等维度的核实与认证，保证每一位会员的真实。</font><br><br>
+							<font style="font-family: 黑体;">如何保障会员隐私不被泄露?</font><br><br>
+								<font style="font-family: 黑体;color: #404040;font-size: 14px;">您的信息将被严格保存在缘都婚恋数据库中，在服务过程中，未经本人允许，红娘无权将您的信息提供给他人。缘都婚恋为您的隐私保驾护航。</font><br><br>
+							<font style="font-family: 黑体;">成为缘都婚恋一对一服务会员后，红娘如何服务?<br><br>
+								<font style="font-family: 黑体;color: #404040;font-size: 14px;">成为缘都婚恋一对一服务会员后，红娘将根据您的择偶意向为您精准推荐，在征得双方同意后，安排见面，并进一步撮合，如果牵手失败，红娘将在服务期内继续为您服务，为您推荐其他会员。</font><br><br>
+							<font style="font-family: 黑体;">如何找到让我满意的伴侣?</font><br><br>
+								<font style="font-family: 黑体;color: #404040;font-size: 14px;">结合丰富的行业积累，缘都婚恋拥有众多线上注册会员及线下报名会员，可以满足您对于伴侣的不同要求，同时服务红娘也会与您沟通交流，帮您分析合适的伴侣类型。</font><br><br>
+							<font style="font-family: 黑体;">如何保证服务质量?</font><br><br>
+								<font style="font-family: 黑体;color: #404040;font-size: 14px;">在服务过程中，如果您对我们的服务有任何的不满，即可拨打服务监察客服电话进行投诉，我们会对您的反映进行核实并及时反馈。同时，服务监察也会定期针对用户满意度进行电话回访。</font><br><br>
 						</p>
 					</div>
 				</div>

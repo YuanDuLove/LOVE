@@ -77,7 +77,7 @@ body{
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="callme.jsp" style="color: white;"><img
-					alt="" src="resources/images/calloff.png" style="line-height: 40px;height: 40px"></a></li>
+					alt="" src="resources/images/call.gif" style="line-height: 40px;height: 40px"></a></li>
 	
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img

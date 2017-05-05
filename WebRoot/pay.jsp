@@ -56,43 +56,50 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			 -->
 		</div>
 		<div
-			style="width: 1350px;height: 60px;background-color: #703987;position:relative;">
-			<ul style="list-style: none;line-height: 60px;">
+			style="width: 1350px;height: 40px;background-color: #D41E5B;position:relative;">
+			<ul style="list-style: none;line-height: 40px;">
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="homepage2.jsp"
-					style="color: white;text-decoration:none">主页</a></li>
+					style="color: white;text-decoration:none;"><img
+					alt="" src="resources/images/homeoff.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="showMainAction.action"
-					style="color: white;text-decoration:none">缘都空间</a></li>
+					style="color: white;text-decoration:none"><img
+					alt="" src="resources/images/zone.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="showQueryAction.action" style="color: white;">搜索</a></li>
+					href="showQueryAction.action" style="color: white;"><img
+					alt="" src="resources/images/search.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="Matchmaker.jsp" style="color: white;">红娘服务</a></li>
+					href="Matchmaker.jsp" style="color: white;"><img
+					alt="" src="resources/images/match.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="Membership.jsp" style="color: white;">会员</a></li>
+					href="Membership.jsp" style="color: white;"><img
+					alt="" src="resources/images/vip.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="MyJsp.jsp" style="color: white;">关于我们</a></li>
+					href="MyJsp.jsp" style="color: white;"><img
+					alt="" src="resources/images/about.png" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
-					href="callme.jsp" style="color: white;">联系我们</a></li>
+					href="callme.jsp" style="color: white;"><img
+					alt="" src="resources/images/call.png" style="line-height: 40px;height: 40px"></a></li>
 	
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/order.png" style="line-height: 60px"
+					alt="" src="resources/images/order.png" style="line-height: 40px;height: 40px"
 					onclick="showMsgInfo()"></li>
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/msgicon.png" style="line-height: 60px"
+					alt="" src="resources/images/msgicon.png" style="line-height: 40px;height: 40px"
 					onclick="showMsgInfo()"></li>
 				<li
 					style="width:70px;height:100%;text-align:center;list-style: none;float: left;"><img
-					alt="" src="resources/images/mem.png" style="line-height: 60px"
+					alt="" src="resources/images/mem.png" style="line-height: 40px;height: 40px"
 					onclick="showMemInfo()"></li>
 			</ul>
 	

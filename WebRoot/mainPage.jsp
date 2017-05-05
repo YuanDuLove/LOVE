@@ -10,13 +10,25 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
+<!-- 缘都空间页面 -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="keywords" content="缘都婚恋,潍坊缘都婚恋,缘都婚恋服务平台">
 <title>缘都婚恋服务平台</title>
 <script type="text/javascript" src="resources/js/jquery-1.9.1.min.js"></script>
 <!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>-->
 <script type="text/javascript" src="resources/js/snow.js"></script>
-
+<!-- mp4视频播放 -->
+<link href="resources/css/video-js.css" rel="stylesheet" type="text/css">
+ <script src="resources/js/video.js"></script>
+ <script>
+   videojs.options.flash.swf = "resources/video/video-js.swf";
+ </script>
+ <script>
+    if (navigator.userAgent.indexOf('MSIE') >= 0){
+        document.getElementById("videoDiv").innerHTML='<embed src="Wildlife.mp4" autostart="true" loop="true" width="640" height="480" >';
+    }
+ </script>
+ <!-- 结束 -->
 <script type="text/javascript">
 
 	function go() {
@@ -116,6 +128,9 @@ td{
 				<div
 					style="margin-left:100px;background-image:url('resources/images/logo.png') ;width:442px;height: 85px;float: left;">
 				</div> </a>
+				<div
+				style="font-size: 24px;line-height: 140px;width: 400px;height: 80px;float: right;">
+				咨询电话 | 0536-7336933</div>
 			<!-- 
 			<div style="width: 195px;height: 80px;float: left;">
 				<img alt="" src="resources/images/top-bg.jpg">
@@ -134,7 +149,7 @@ td{
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="showMainAction.action"
 					style="color: white;text-decoration:none"><img
-					alt="" src="resources/images/zoneoff.png" style="line-height: 40px;height: 40px"></a></li>
+					alt="" src="resources/images/zoneoff.gif" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="showQueryAction.action" style="color: white;"><img
@@ -177,17 +192,17 @@ td{
 					<div id="messageDiv" onmouseover="changColor1()"
 						onmouseout="hiddenColor()" onclick="showMsg()"
 						style="width: 200px;height: 50px;background:#E1E5D7;line-height:50px;text-align: center;margin-top:100px;border: 1px solid #EEE0E5;">
-						<font style="font-family: 黑体;font-size: 18px;color: pink"><s:property value="unReadMsg"/>条消息</font>
+						<font style="font-family: 黑体;font-size: 18px;color: red"><s:property value="unReadMsg"/>条消息</font>
 					</div>
 					<div id="emailDiv" onmouseover="changColor2()"
 						onmouseout="hiddenColor()"
 						style="width: 200px;height: 50px;background:#E1E5D7;line-height:50px;text-align: center;margin-top:10px;border: 1px solid #EEE0E5;">
-						<font style="font-family: 黑体;font-size: 18px;color: pink">没有邮件</font>
+						<font style="font-family: 黑体;font-size: 18px;color: red">没有邮件</font>
 					</div>
 					<div id="remindDiv" onmouseover="changColor3()"
 						onmouseout="hiddenColor()" onclick="showNotice()"
 						style="width: 200px;height: 50px;background: #E1E5D7;line-height:50px;text-align: center;margin-top:10px;border: 1px solid #EEE0E5;">
-						<font style="font-family: 黑体;font-size: 18px;color: pink"><s:property value="unReadNotice"/>条系统通知</font>
+						<font style="font-family: 黑体;font-size: 18px;color: red"><s:property value="unReadNotice"/>条系统通知</font>
 					</div>
 				</div>
 		</div>
@@ -282,8 +297,8 @@ td{
 			</div>
 			<div style="margin-left:10px;width: 350px;float: left;margin-top: 100px;">
 				<div
-					style="width: 100%;height: 300px;border: 1px solid #dedede;border-radius:3px;background: #deded6;">
-					<div style="width: 100%;height: 200px;text-align: center;margin-top: 20px;">
+					style="width: 100%;height: 370px;border: 1px solid #dedede;border-radius:3px;background: url('resources/images/huawenbeijing.jpg');">
+					<div style="width: 100%;height: 200px;text-align: center;margin-top: 100px;">
 						<%
 							Map userinfo = (Map) session.getAttribute("userinfo");
 							String nikename = (String) userinfo.get("NIKENAME");
@@ -310,9 +325,20 @@ td{
 						</div>
 						<div onclick="recharge()"
 							style="width: 25%;height: 35px;background-color:#f52f52;margin-left:5%;float: left;text-align: center;line-height: 35px;font-family: 黑体;border-radius:5px;cursor: pointer;">
-							<font color="white">珍爱币充值</font>
+							<font color="white">VIP充值</font>
 						</div>
 					</div>
+					<!--MP4视频加载  -->
+					<div style="width: 100%;height: 240px;background-color: red;margin-top: 40px;background: url('resources/images/shipinbiankuang.jpg');">
+					
+						<div style="width: 90%;height: 90%;margin:0 auto;padding-top: 3%">
+							<video id="my_video_1" class="video-js vjs-default-skin" controls="controls" muted autoplay="autoplay" loop="loop" preload="auto" width="315" height="216" data-setup="{}">
+        						<source src="resources\video\1.mp4" type="video/mp4"> 
+    						</video>
+						</div>
+					</div>
+					
+					
 				</div>
 			</div>
 		</div>

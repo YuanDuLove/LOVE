@@ -327,7 +327,7 @@
 						<div style="font-family: 黑体;font-size: 18px;color: black;margin-right: 10px;margin-top: 10px;">
 							照片展示
 						</div>
-						<div style="margin-left: 10px;margin-top: 10px;border: 1px solid black;background: aqua;height: 100px;width: 600px;">
+						<div style="margin-left: 10px;margin-top: 10px;height: 100px;width: 600px;">
 							
 								<s:iterator value="photos" status="st">
 									<div style="width: 100px;text-align: center;margin-right: 10px;float: left;" onclick="showBigImg('<s:property value="PHOTOS"/>')">
@@ -339,7 +339,7 @@
 							
 						</div>
 						
-						<div id="bigImgDiv" style="margin-left: 10px;margin-top: 10px;border: 1px solid black;background: aqua;height: 400px;width: 400px;display: none;">
+						<div id="bigImgDiv" style="margin-left: 10px;margin-top: 10px;border: 1px solid black;height: 400px;width: 400px;display: none;">
 							<img width="400px" height="400px" alt="" src="" id="bigImg">
 						</div>
 					</div>

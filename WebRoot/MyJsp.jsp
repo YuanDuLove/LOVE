@@ -18,9 +18,6 @@
 a {
 	text-decoration: none;
 }
-body {
-	background-image: url("resources/images/bgimg.jpg");
-}
 </style>
 <script type="text/javascript">
 	function showMemInfo(){
@@ -77,7 +74,7 @@ body {
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="MyJsp.jsp" style="color: white;"><img
-					alt="" src="resources/images/about2.png" style="line-height: 40px;height: 40px"></a></li>
+					alt="" src="resources/images/about1.gif" style="line-height: 40px;height: 40px"></a></li>
 				<li
 					style="width:150px;height:100%;text-align:center;list-style: none;float: left;"><a
 					href="callme.jsp" style="color: white;"><img
@@ -99,34 +96,7 @@ body {
 
 	
 		</div>
-		 <div style="width: 70%;background:rgba(229,229,229,.7);margin: 0 auto;">
-		 <h1 style="text-align: center;">缘都婚恋</h1>
-		 	<p style="font-family: 黑体;font-size: 18px;">
-		 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;缘都婚恋(网址http://www.yuandulove.com)以“走进缘都，牵手真爱”为己任。秉承“因为专注，所以专业；<br>
-		 		&nbsp;因为真诚，所以可信”的服务宗旨。 缘都婚恋开创“人人都可做红娘”的独特婚恋服务模式，解决信息不对称、资<br>
-		 		&nbsp;源不匹配的难题，首次提出“微红娘”一词，并将“微红娘”成功引用到婚恋交友领域。
-				<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从2015年开始全方位、多元化调研婚恋服务业市场现状，充分分析婚恋服务业市场前景。将先进的现代科技（网<br>
-				&nbsp;站、APP、公众号与自媒 体等）与传统的婚恋服务相结合，建设起大规模的现代婚恋服务体系，开拓了婚恋界线上线<br>
-				&nbsp;下结合服务模式。这在潍坊市是第一家，也是唯一的一家。 “要做就做最好的”一直是我们的不懈追求和服务理念。<br>
-				&nbsp;从2015年起全市建立和收编10余家线下实体店，构建了覆盖全市的专业的红娘婚恋服务网络。 创建伊始，即实行了实<br>
-				&nbsp;名会员制，依托使用权威认证机构对会员身份进行认证，是中国实名婚恋服务的践行者。目前，已有超过100名有效<br>
-				&nbsp;会员在缘都婚恋找到了他们的真爱。2016年升级优化了集婚恋服务、法律援助、婚庆服务和情感分析为一体的专业<br>
-				&nbsp;婚恋互动平台，开启了线上、线下婚姻互助的新模式，为万千单身求偶族和受情感困扰一族带来福祉。   
-				<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;未来三年（至2019年）将启动婚恋全产业链布局，进入婚礼庆典、婚纱摄影、婚品、婚礼地产、互联网金融等领<br>
-				&nbsp;域，为缘都婚恋会员提供婚恋领 域全方位服务。缘都婚恋的目标是通过不断探索和创新打通婚恋服务全产业链，为<br>
-				&nbsp;会员寻真爱，为加盟商谋福利，打造共赢的服务平台，全力冲刺成为行业区域领跑者，从而走向全国。         
-				<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创始人简介: 缘都婚恋发起赵林波、王江波、倪强荣均为回乡创业的大学生。三人在各自所从事的行业和领域都<br>
-				&nbsp;取得了一定的成功，积攒了宝贵的创业经验和教训。 现在，为了一个共同的梦想，走在了一起创业的路上。由于发现<br>
-				&nbsp;身边大量单身朋友择偶遇到困难，三人毅然决定进入婚恋服务领域，并推出“人人都可做红娘”式的专业婚恋服务模<br>
-				&nbsp;式。        
-				<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;企业荣誉: 未来缘都婚恋将继续坚持“人人都可做红娘”的使命，以真诚的态度、专业的精神，为用户提供可信赖<br>
-				&nbsp;的服务。
-
-		 	</p>
+		 <div style="width: 100%;height:2350px; margin: 0 auto;background-image:url('resources/images/about1.png');">
 			<!-- 
 			<h4 style="text-align: center;">&nbsp;&nbsp;介绍缘都婚恋(网址http://www.yuandulove.com)以“走进缘都，牵手真爱”为己任。秉承“因为专注，所以专业；因为真诚，所以可信”的服务宗旨。</h4>
 			<h4 style="text-align: center;">缘都婚恋开创“人人都可做红娘”的独特婚恋服务模式，解决信息不对称、资源不匹配的难题，首次提出“微红娘”一词，并将“微红娘”成功引用到</h4>
@@ -148,6 +118,7 @@ body {
 			<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……………………………… </h4>
 			 -->
 		</div>
+		<!--
 		<div style="width: 100%;height:180px ;background:rgba(255,228,225,.3);">
 					<div style="width: 800px;height: 180px;margin: 0 auto;">
 				<div style="float: left;width: 100px;height: 100px;margin-top: 40px;">
@@ -163,6 +134,7 @@ body {
 			</div>
 				
 		</div>
+		-->
 	</div>
 </body>
 </html>
